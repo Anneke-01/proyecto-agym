@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,600&family=Poppins:wght@700&display=swap');
+
+* {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+
+html {
+    /* font-size: 62.5%;*/
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+
+}
+
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+  
+.navbar-menu li:nth-child(-n+4) {
+    margin-right: 40px;
+}
+
+
+.navbar-menu li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+    background-color: #000000;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+}
+
+
+
+.btn-registrarse {
+    color: #13265E;
+    font-weight: 600;
+    padding: 9px 16px;
+    margin-left: 15px;
+    margin-right: 3em;
+    background: #FDB62F;
+    border-radius: 5px;
+}
+
+.btn-registrarse:hover {
+    background-color: #faa403;
+}
+
+.btn-iniciarsesion {
+    color: #000000;
+    padding: 8px 16px;
+    margin-left: 8px;
+    background: #FFFFFF;
+    border: 1px solid #949494;
+    border-radius: 5px;
+}
+
+.btn-iniciarsesion:hover {
+    border: 1px solid #000000
+}
+
+/*MODAL*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    position: relative;
+    height: 360px;
+    border-radius: 40px;
+}
+
+.modal-content h2 {
+    position: absolute;
+    height: 54px;
+    left: 70px;
+    top: 20px;
+    font-size: 25px;
+    line-height: 42px;
+    color: #142B6F;
+}
+
+.modal-content label {
+    position: absolute;
+    width: 60px;
+    height: 28px;
+    left: 40px;
+    top: 100px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #142B6F;
+}
+
+.modal-content input {
+    position: absolute;
+    width: 450px;
+    height: 40px;
+    left: 40px;
+    top: 135px;
+    background: #FFFFFF;
+    border: 1px solid #A7A7A7;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.modal-content button {
+    position: absolute;
+    width: 450px;
+    height: 50px;
+    left: 40px;
+    top: 200px;
+    background: #023047;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 32px;
+
+}
+.modal-content button:hover {
+    background: #0c5072;
+
+}
+.linea-izq {
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    left: 40px;
+    top: 280px;
+    border: 1px solid #9f9f9f;
+}
+
+.linea-der {
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    left: 350px;
+    top: 280px;
+    border: 1px solid #9f9f9f;
+}
+
+.circulo-apple {
+    box-sizing: border-box;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    left: 340px;
+    top: 300px;
+    padding-left: 1.4%;
+    padding-top: 0.8%;
+}
+
+.circulo-google {
+    box-sizing: border-box;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 300px;
+    left: 160px;
+    border: 1px solid #9d9d9d;
+    border-radius: 50%;
+    background: url('https://api.iconify.design/flat-color-icons/google.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/flat-color-icons/google.svg');
+}
+.circulo-facebook {
+    box-sizing: border-box;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 300px;
+    left: 250px;
+    border-radius: 50%;
+    background: url('https://api.iconify.design/logos/facebook.svg') no-repeat center center / contain;
+    content: url('https://api.iconify.design/logos/facebook.svg');
+}
+.modal-content h3 {
+    position: absolute;
+    width: 169px;
+    height: 28px;
+    left: 190px;
+    top: 265px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #666666;
+}
+
+.linea-modal {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 70px;
+    border: 1px solid #A7A7A7;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    background: url('https://api.iconify.design/iconamoon/close-thin.svg?color=%23142b6f&height=40') no-repeat center center / contain;
+    content: url('https://api.iconify.design/iconamoon/close-thin.svg?color=%23142b6f&height=40');
+    margin-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 400px;
+    height: 500px;
+    margin-top: 25px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.dropdown-content h2{
+    left: 36px;
+    top: 38px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #142B6F;
+    margin: 20px 0px 10px 20px;
+}
+.dropdown-content #linea-dropdown{
+    min-width: 160px;
+    border: 1px solid #d4d2d2;
+}
+
+  
+.dropdown-content a {
+    color: #333;
+    padding-bottom: 0px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    width: 250px;
+    margin-left: 20px;   
+    
+}
+.monedas{
+    margin-bottom: 20px;
+}
+.dropdown-content a span{
+    color: #a39f9f;
+    font-size: 16px;
+    font-weight: 400px;
+    margin-right: 10px;
+
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.banderas-container-izq{
+    position: absolute;
+    width: 140px;
+    height: 53px;
+    left: 20px;
+   
+}
+
+
+.banderas-container-der{
+    position: absolute;
+    width: 140px;
+    height: 53px;
+    left: 220px;
+   
+}
+/*
+.texto-banderas{
+    position: absolute;
+    width: 100px;
+    height: 22px;
+    left: 50px;
+    top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #13265E;
+
+}
+*/

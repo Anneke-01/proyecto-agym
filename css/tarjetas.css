@@ -1,0 +1,92 @@
+
+.tarjetas img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+.tarjetas .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 0.4rem;
+  margin-top: 2%;
+}
+
+.tarjetas .box-container .box {
+  height: 34rem;
+  /* flex: 1 1 30rem; */
+  border: 0.1rem solid #e0e0e0;
+  box-shadow: 0 .5rem 1 rem rgba(0, 0, 0, 0.3);
+  border-radius: .2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjetas .box-container .box .content {
+  position: absolute;
+  /* top: 70%; */
+  left: 0;
+  /* height: 100%; */
+  width: 100%;
+  padding: 0 1rem 1rem 1rem;
+  text-align: left;
+
+}
+
+.content-title {
+  height: 3rem;
+}
+
+.content-title h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tarjetas .box-container .box .content div,
+h3,
+h4,
+strong {
+  margin-top: 2%;
+}
+
+.ticket-color {
+  color: #949494;
+  font-weight: 500;
+}
+
+.duracion {
+  font-weight: 400;
+}
+
+.aviso {
+  background: red;
+  border-radius: 5px;
+  padding-left: 3%;
+  color: #FFFFFF;
+  width: 70%;
+  height: 10%;
+  font-weight: 700;
+}
+
+.stars {
+  color: gold;
+  width: 40%;
+}
+
+.puntuacion {
+  width: 100%;
+  display: flex;
+}
+
+.puntuacion h4 {
+  color: #949494;
+  font-weight: 500;
+}
+
+.price {
+  display: flex;
+}
+
+.price h4 {
+  margin-left: 6px;
+  font-weight: 400;
+}
