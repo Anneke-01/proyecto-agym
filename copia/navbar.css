@@ -58,6 +58,19 @@ nav {
     font-size: 14px; */
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 5px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
 .btn-registrarse {
     color: #13265E;
     font-weight: 600;
@@ -86,18 +99,7 @@ nav {
 }
 
 
-.burger {
-    display: none;
-    cursor: pointer;
-}
 
-.burger div {
-    width: 25px;
-    height: 5px;
-    background-color: #000000;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
 
 .header {
     min-height: 95vh;
@@ -232,15 +234,20 @@ section .container {
 
 .temas-lista li button {
     align-items: center;
-    background: #ffff;
     border-radius: 16px 16px 0 0;
-    color: #000;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.875rem;
     padding: 16px 48px;
+    cursor: pointer;
+    background: #ffff;
+    color: #000000;
 }
 
+
+.desactive-button{
+    background: none;
+}
 @media screen and (max-width: 1024px) {
     .nav-links {
         display: flex;
@@ -255,6 +262,7 @@ section .container {
     }
 
     .nav-links {
+
         position: absolute;
         right: 0px;
         height: 92vh;
@@ -264,7 +272,7 @@ section .container {
         flex-direction: column;
         align-items: center;
         width: 50%;
-        transform: translateX(100%);
+        transform: translateX(40%);
         transition: transform 0.5s ease-in;
     }
 
@@ -276,7 +284,7 @@ section .container {
         display: block;
     }
 
-   
+
 
     .search-bar {
         display: none;
@@ -320,7 +328,7 @@ section .container {
 @keyframes navLinkFade {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(100%);
     }
 
     to {

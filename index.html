@@ -2,360 +2,396 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nadsat Guide</title>
-    <!-- font awesome cdn link -->
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" ></script>
-
-
-    <!-- Custom css file link-->
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tarjetas.css">
-    <link rel="icon" type="image/png" href="/images/nadsat.png">
-    
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <nav>
-            <div class="logo">
-                <img src="/images/nadsat.png">
-                <div class="logo-text">
-                    <h4>Nadsat</h4>
-                    <h4>Guide</h4>
+    <section class="header">
+        <div class="logo">
+            <img src="/images/nadsat.png">
+            <div class="logo-text">
+                <h4>Nadsat</h4>
+                <h4>Guide</h4>
+            </div> 
+        </div> 
+        <nav class="navbar">  
+            <a href="#">Español</a>
+            <a href="#">USD(U$)</a>
+            <a href="#"><i class="fas fa-cart-shopping"></i></a>
+            <a href="#"><i class="fas fa-circle-question"></i></a>
+            <a href="#" class="btn-iniciarsesion">Iniciar sesión</a>
+            <a href="#" class="btn-registrarse">Registrarse</a>  
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+   
+    <section class="home">
+        <div class="home-slider">
+            <div class="W">
+                <div class="slide" >
+                    <div class="content">
+                        <h1>Haz más con Nadsat Guide</h1>
+                        <h3>Un sitio con más de 300,000+ experiencias que recordarás</h3>
+
+                        <div class="search-bar">
+                            <form>
+                                <div class="location-input">
+                                    <label>¿A dónde viajas?</label>
+                                    <input type="text" placeholder="Busca un lugar o actividad">
+                                </div>
+                                <div id="linea-busqueda"></div>
+                                <div class="date-input">
+                                    <label>¿Cuándo?</label>
+                                    <input type="text" placeholder="Selecciona una fecha">
+                                </div>
+                                <button type="submit"><i class="fas fa-magnifying-glass fa-2xl" style="color: #ffffff;margin-left: 30%;
+                                    margin-top: 30%;"></i></button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- categories starts -->
+    <section class="temas">
+        <section class="container">
+            <ul class="temas-lista" id="mi-lista">
+                <li><button class="btn-categories active"><i class="fas fa-archway fa-lg"></i>Cultura</button></li>
+                <li><button class="btn-categories"><i class="fas fa-regular fa-calendar"></i>Eventos</button></li>
+                <li><button class="btn-categories"><i class="fas fa-utensils"></i>Gastronomía</button></li>
+                <li><button class="btn-categories"><i class="fab fa-trees"></i>Naturaleza</button></li>
+            </ul>
+        </section>
+    </section>
+    <!-- categories ends -->
+
+
+    <!-- home packages section starts -->
+    <section class="home-packages">
+        <h1 class="heading-title">Experiencias culturales inolvidables</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="/images/anna-church-fnULBa088dc-unsplash.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Vaticano: ticket de acceso a museos y Capilla sixtina</h3>
+                    </div>
+                    <h4 class="duracion">1 día - Sin colas</h4>
+                    <div class="aviso">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 28,90 US$</strong><h4>por persona</h4>
+                    </div> 
+                
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/londres-soldado.jpg">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Londres: 30 monumentos principales a pie y entrada al Shard</h3>
+                    </div>
+                    <h4 class="duracion">6 horas - Sin colas</h4>
+                    <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 109,39 US$</strong><h4>por persona</h4>
+                    </div>  
+                
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/edimburgo.jpg">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Edimburgo: Tour guiado a pie de Harry Potter</h3>
+                    </div>                        
+                    <h4 class="duracion">2 horas</h4>
+                    <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 40 US$</strong><h4>por persona</h4>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/palacio-versalles.jpg">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Desde París: palacio de Versalles y acceso a los jardines</h3>
+                    </div> 
+                    <h4 class="duracion">6 - 9,5 horas - Sin colas</h4>
+                    <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 114,53 US$</strong><h4>por persona</h4>
+                    </div>        
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/alberobello.jpg">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Alberobello: tour guiado de trulli de 2 horas</h3>
+                    </div>   
+                    <h4 class="duracion">2 horas - Grupo reducido</h4>
+                    <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 40,56 US$</strong><h4>por persona</h4>
+                    </div>  
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/piramides-egipto.jpg">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Pirámides de Egipto</h3>
+                    </div>                     
+                    <h4 class="duracion">2 días</h4>
+                    <div class="aviso">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 200 US$</strong><h4>por persona</h4>
+                    </div> 
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/vaticano.jpg">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Vaticano: ticket de acceso a museos y Capilla sixtina</h3>
+                    </div>                    
+                    <h4 class="duracion">1 día - Sin colas</h4>
+                    <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 28,90 US$</strong><h4>por persona</h4>
+                    </div> 
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/acapulco.jpg">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Acapulco: las mejores playas de México</h3>
+                    </div>                
+                    <h4 class="duracion">2 días - Sin colas</h4>
+                    <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 40,90 US$</strong><h4>por persona</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/images/machu-picchu.jpg">
+                </div>
+                <div class="content">
+                    <h3 class="ticket-color">TICKET DE ENTRADA</h3>
+                    <div class="content-title">
+                        <h3>Machu Picchu: tour a pie</h3>
+                    </div>                     
+                    <h4 class="duracion">1 día - Sin colas</h4>
+                    <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
+                    <div class="puntuacion">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
+                    </div>
+                    <div class="price">
+                        <strong>Desde 28,90 US$</strong><h4>por persona</h4>
+                    </div> 
+                </div>
+            </div>
+
+            
+
+        </div>
+        <div class="load-more">
+            <a href="#" class="text-pagination">Página 1 de 48</a>
+            <button id="btn-izq"><i class="fas fa-chevron-left fa-2xl" style="color: #023047;"></i></button>
+            <button id="btn-der"><i class="fas fa-chevron-right fa-2xl" style="color: #023047;"></i></button>
+        </div>
+    </section>
+        
+    
+
+
+    <!-- home packages section ends -->
+
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Asistencia</h3>
+                <a href="">Contacto</a>
+                <a href="">Información legal</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Cookies</a>
+                <a href="">Términos y condiciones</a>
+            </div>
+            <div class="box">
+                <h3>Empresa</h3>
+                <a href="">Sobre nosotros</a>
+                <a href="">Empleo</a>
+            </div>
+            <div class="box">
+                <h3>Trabaja con nosotros</h3>
+                <a href="">Afiliados</a>
+                <a href="">Agencias de viajes</a>
+                <a href="">Alojamiento</a>
+                <a href="">Proveedores</a>
+            </div>
+            <div class="box">
+                <h3>Métodos de pago</h3>
+                <i class="fa-brands fa-cc-visa fa-2xl" style="color: #ffffff;"></i>
+            </div>
+            
+        </div>
+
+        
+    </section>
+    <section class="sub-footer">
+        <div class="box-container">
+            <div class="box">
+                <div class="logo">
+                    <img style="width: 5rem;" src="/images/logo.png">
+                    <div class="logo-text">
+                        <h4 style="color:#ffffff;">Nadsat</h4>
+                        <h4 style="color:#ffffff;">Guide</h4>
+                    </div> 
+                </div>
+            </div>
+            <div class="box">
+                <h3 style="color:#ffffff;"><span>&copy; 2023 Nadsat Guide. Creado en Nicaragua.</span></h3>
+            </div>
+            <div class="box" style="padding-left: 20%;">
+                <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest fa-2xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i></a>
+                
+                
+                
                 
             </div>
             
-            <ul class="nav-links">
-                <li><a href="#">Español</a></li>
-                <li><a href="#">USD(U$)</a></li>
-                <li><a href="#"><i class="fas fa-cart-shopping"></i></a></li>
-                <li><a href="#"><i class="fas fa-circle-question"></i></a></li>
-                <li><a href="#" class="btn-iniciarsesion">Iniciar sesión</a></li>
-                <li><a href="#" class="btn-registrarse">Registrarse</a></li>           
-            </ul>
-            <div class="burger">
-                <div class="linea1"></div>
-                <div class="linea2"></div>
-                <div class="linea3"></div>
-            </div>
-        </nav> 
-        <div class="container-header">
-            <h1>Haz más con Nadsat Guide</h1>
-            <h5>Un sitio con 300,000+ experiencias que recordarás</h5>
-            <div class="search-bar">
-                <form>
-                    <div class="location-input">
-                        <label>¿A dónde viajas?</label>
-                        <input type="text" placeholder="Busca un lugar o actividad">
-                    </div>
-                    <div id="linea-busqueda"></div>
-                    <div class="date-input">
-                        <label>¿Cuándo?</label>
-                        <input type="text" placeholder="Selecciona una fecha">
-                    </div>
-                    <button type="submit"><i class="fas fa-magnifying-glass fa-2xl" style="color: #ffffff;margin-left: 30%;
-                        margin-top: 30%;"></i></button>
-                </form>
-            </div>
         </div>
-        <section class="temas">
-            <section class="container">
-                <ul class="temas-lista">
-                    <li><button><i class="fas fa-archway fa-lg"></i>Cultura</button></li>
-                    <li><button><i class="fas fa-regular fa-calendar"></i>Eventos</button></li>
-                    <li><button><i class="fas fa-utensils"></i>Gastronomía</button></li>
-                    <li><button><i class="fab fa-trees"></i>Naturaleza</button></li>
-                </ul>
-            </section>
-        </section>
-    </div>
-    
-    <div class="main-container">
-        <h1>Experiencias culturales inolvidables</h1>
-        <section class="tarjetas" id="tarjetas">
-            <div class="box-container">
-                <div class="box">
-                    <img src="/images/anna-church-fnULBa088dc-unsplash.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3>Vaticano: ticket de acceso a museos y Capilla sixtina</h3>
-                        </div>
-                        <h4 class="duracion">1 día - Sin colas</h4>
-                        <div class="aviso">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 28,90 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/images/londres-soldado.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3>Londres: 30 monumentos principales a pie y entrada al Shard</h3>
-                        </div>
-                        <h4 class="duracion">6 horas - Sin colas</h4>
-                        <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 109,39 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/images/edimburgo.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3>Edimburgo: Tour guiado a pie de Harry Potter</h3>
-                        </div>                        
-                        <h4 class="duracion">2 horas</h4>
-                        <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 40 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/images/palacio-versalles.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3>Desde París: palacio de Versalles y acceso a los jardines</h3>
-                        </div> 
-                        <h4 class="duracion">6 - 9,5 horas - Sin colas</h4>
-                        <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 114,53 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/images/alberobello.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3>Alberobello: tour guiado de trulli de 2 horas</h3>
-                        </div>   
-                        <h4 class="duracion">2 horas - Grupo reducido</h4>
-                        <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 40,56 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/images/piramides-egipto.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3 class="duracion">Pirámides de Egipto</h3>
-                        </div>                     
-                        <h4 class="duracion">2 días</h4>
-                        <div class="aviso">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 200 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/images/vaticano.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3>Vaticano: ticket de acceso a museos y Capilla sixtina</h3>
-                        </div>                    
-                        <h4 class="duracion">1 día - Sin colas</h4>
-                        <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 28,90 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/images/acapulco.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3>Acapulco: las mejores playas de México</h3>
-                        </div>                
-                        <h4 class="duracion">2 días - Sin colas</h4>
-                        <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 40,90 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-                <div class="box">
-                    <img src="/images/machu-picchu.jpg">
-                    <div class="content">
-                        <h3 class="ticket-color">TICKET DE ENTRADA</h3>
-                        <div class="content-title">
-                            <h3>Machu Picchu: tour a pie</h3>
-                        </div>                     
-                        <h4 class="duracion">1 día - Sin colas</h4>
-                        <div class="aviso" style="visibility:hidden;">Se agota fácilmente</div>
-                        <div class="puntuacion">
-                            <div class="stars">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <strong>4.5</strong><h4>(58.445 opiniones)</h4>                
-                        </div>
-                        <div class="price">
-                            <strong>Desde 28,90 US$</strong><h4>por persona</h4>
-                        </div>            
-                    </div>
-                </div>
-    
-            </div>
-        </section>
-        <!-- <section class="popular" id="popular">
-            <div class="box-container-pop">
-                <div class="box-pop">
-                    <span class="price">$</span>
-                    <img src="/images/coliseo-rola.jpg">
-                    <h3>HOLAA</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+    </section>
+    <!-- footer section ends -->
 
-                    </div>
-                </div>
-                <div class="box-pop">
-                    <span class="price">$</span>
-                    <img src="/images/coliseo-rola.jpg">
-                    <h3>HOLAA</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
 
-                    </div>
-                </div>
-                <div class="box-pop">
-                    <span class="price">$</span>
-                    <img src="/images/coliseo-rola.jpg">
-                    <h3>HOLAA</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+    <script src="/js/app2.js"></script>
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
 
-                    </div>
-                </div>
-                <div class="box-pop">
-                    <span class="price">$</span>
-                    <img src="/images/coliseo-rola.jpg">
-                    <h3>HOLAA</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    </div>
-    
-    <script src="/js/navbar.js"></script>
 </body>
 </html>

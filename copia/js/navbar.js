@@ -11,9 +11,9 @@ const navSlide = () => {
             //console.log(index);
             //link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1}s`;
             // console.log(index/7);
-            if(link.style.animation){
+            if (link.style.animation) {
                 link.style.animation = '';
-            }else{
+            } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
             }
         });
@@ -23,7 +23,7 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
-    
+
 
 }
 
