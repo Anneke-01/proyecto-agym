@@ -534,7 +534,7 @@ strong {
     font-size: 14px;
     padding-bottom: 1rem;
     font-weight: 300;
-    
+
 
 }
 
@@ -542,7 +542,7 @@ strong {
     color: var(--light-white);
     font-size: 1.5rem;
     padding: 1rem;
-} 
+}
 
 
 
@@ -594,7 +594,7 @@ strong {
 
     .temas {
         position: absolute;
-        top: 83%;
+        top: 96%;
         width: 100%;
         z-index: 1;
     }
@@ -615,7 +615,7 @@ strong {
 
     .temas {
         position: absolute;
-        top: 57%;
+        top: 84%;
         width: 100%;
         z-index: 1;
     }
@@ -659,7 +659,7 @@ strong {
 
     .temas {
         position: absolute;
-        top: 58%;
+        top: 86%;
         width: 100%;
         z-index: 1;
     }
@@ -743,7 +743,7 @@ strong {
 
     .temas {
         position: absolute;
-        top: 53%;
+        top: 78%;
         width: 100%;
         z-index: 1;
     }
