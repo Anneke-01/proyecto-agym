@@ -709,7 +709,7 @@ strong {
     }
 
     .home-packages .box-container .image img {
-        width: 49rem;
+        width: 38rem;
         height: 34rem;
         object-fit: cover;
         transition: .2s linear;
@@ -771,13 +771,13 @@ strong {
     }
     .home-packages .box-container {
         display: flex;
-        overflow-x: auto;
+        overflow-x: scroll;
         gap: 2rem;
     }
 
-    .home-packages .box-container::-webkit-scrollbar{
+    /* .home-packages .box-container::-webkit-scrollbar{
         width: 0;
-    }
+    } */
     .load-more{
         display: none;
     }
@@ -842,17 +842,21 @@ strong {
 
     .home-packages .box-container {
         display: flex;
-        overflow-x: auto;
+        overflow-x: scroll;
         gap: 2rem;
     }
 
-    .home-packages .box-container::-webkit-scrollbar{
+    /* .home-packages .box-container::-webkit-scrollbar{
         width: 0;
-    }
+    } */
     .load-more{
         display: none;
     }
-
+    .home-packages .box-container .image {
+        height: 36rem;
+        width: 35rem;
+        overflow: hidden;
+    }
 
 }
 @media (max-width:425px){
@@ -913,16 +917,20 @@ strong {
 
     .home-packages .box-container {
         display: flex;
-        overflow-x: auto;
+        overflow-x: scroll;
         gap: 2rem;
     }
 
-    .home-packages .box-container::-webkit-scrollbar{
+    /* .home-packages .box-container::-webkit-scrollbar{
         width: 0;
-    }
+    } */
     .load-more{
         display: none;
     }
-
+    .home-packages .box-container .image {
+        height: 36rem;
+        width: 35rem;
+        overflow: hidden;
+    }
 
 }
