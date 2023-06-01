@@ -28,7 +28,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     overflow-x: hidden;
 }
 
@@ -41,7 +41,7 @@ html::-webkit-scrollbar-track {
 }
 
 section {
-    padding: 5rem 10%;
+    padding: 5rem 5%;
 }
 
 .heading-title {
@@ -75,8 +75,8 @@ section {
     z-index: 1000;
     background-color: var(--white);
     display: flex;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     box-shadow: var(--box-shadow);
     align-items: center;
     justify-content: space-between;
@@ -106,7 +106,7 @@ section {
 /*LOGO ENDS*/
 
 .header .navbar a {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-left: 2rem;
     color: var(--back);
 }
@@ -164,7 +164,7 @@ section {
     justify-content: center;
     background-size: cover !important;
     background-position: center !important;
-    min-height: 60rem;
+    min-height: 38rem;
     width: 100%;
     object-fit: cover;
 }
@@ -274,9 +274,10 @@ label {
 
 .temas {
     position: absolute;
-    top: 63%;
+    top: 35rem;
     width: 100%;
     z-index: 1;
+    padding: 0rem 5%;
 }
 
 section .container {
@@ -306,10 +307,10 @@ section .container {
 .temas-lista li button {
     align-items: center;
     border-radius: 16px 16px 0 0;
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 600;
     line-height: 1.875rem;
-    padding: 16px 48px;
+    padding: 1rem 2.5rem;
     cursor: pointer;
     background: #ffff;
     color: #000000;
@@ -553,24 +554,12 @@ strong {
         padding: 3rem 5%;
     }
 
-    .temas {
-        position: absolute;
-        top: 65%;
-        width: 100%;
-        z-index: 1;
-    }
+   
 }
 
 @media (max-width:1024px) {
     section {
         padding: 3rem 5%;
-    }
-
-    .temas {
-        position: absolute;
-        top: 83%;
-        width: 100%;
-        z-index: 1;
     }
 
     .home-packages .box-container {
@@ -592,12 +581,7 @@ strong {
         padding: 3rem 5%;
     }
 
-    .temas {
-        position: absolute;
-        top: 96%;
-        width: 100%;
-        z-index: 1;
-    }
+    
 }
 
 @media (max-width: 991px) {
@@ -613,12 +597,7 @@ strong {
         font-size: 3vw;
     }
 
-    .temas {
-        position: absolute;
-        top: 84%;
-        width: 100%;
-        z-index: 1;
-    }
+    
 }
 
 @media (max-width: 846px) {
@@ -657,25 +636,7 @@ strong {
         display: none;
     }
 
-    .temas {
-        position: absolute;
-        top: 86%;
-        width: 100%;
-        z-index: 1;
-    }
-
-
-    .temas-lista li button {
-        align-items: center;
-        border-radius: 16px 16px 0 0;
-        font-size: 1.5rem;
-        font-weight: 700;
-        line-height: 1.875rem;
-        padding: 11px 37px;
-        cursor: pointer;
-        background: #ffff;
-        color: #000000;
-    }
+    
 }
 
 @media (max-width:768px) {
@@ -714,7 +675,7 @@ strong {
         display: none;
     }
 
-    .temas-lista li button {
+    /* .temas-lista li button {
         align-items: center;
         border-radius: 16px 16px 0 0;
         font-size: 1.5rem;
@@ -724,7 +685,7 @@ strong {
         cursor: pointer;
         background: #ffff;
         color: #000000;
-    }
+    } */
 
 }
 
@@ -741,28 +702,6 @@ strong {
         display: none;
     }
 
-    .temas {
-        position: absolute;
-        top: 78%;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .temas-lista li button {
-        align-items: center;
-        border-radius: 16px 16px 0 0;
-        font-size: 1.5rem;
-        font-weight: 700;
-        line-height: 1.875rem;
-        padding: 11px 13px;
-        cursor: pointer;
-        background: #ffff;
-        color: #000000;
-    }
-
-    .temas-lista li button i {
-        display: none;
-    }
 
     section .container {
         display: block;
