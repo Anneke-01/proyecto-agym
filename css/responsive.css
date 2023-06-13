@@ -237,7 +237,8 @@
 
 }
 
-@media (max-width:377px) {
+/* @media (max-width:377px) */
+@media (width <=375px) {
     .temas {
         position: absolute;
         top: 35.5rem;
@@ -319,7 +320,7 @@
     .seccion3 {
         display: none;
     }
-    
+
     .modal-content {
         background-color: #fefefe;
         margin: 35% auto;
@@ -335,8 +336,9 @@
         font-size: 2rem;
         font-weight: bold;
     }
-    
-    .search-bar form input, label {
+
+    .search-bar form input,
+    label {
         font-size: 1.5rem;
     }
 
@@ -349,6 +351,7 @@
         border: 1px solid #888;
         border-radius: 0.5rem;
     }
+
     .modal form button {
         width: 26rem;
         height: 2.7rem;
@@ -359,18 +362,18 @@
         font-size: 1.8rem;
         font-weight: 600;
     }
-    
+
     .modal .modal-content .dividers {
         margin-top: 10%;
         display: flex;
     }
-    
+
     .modal .modal-content #divider-izq {
         width: 8rem;
         height: 1px;
         background-color: #A7A7A7;
     }
-    
+
     .modal .modal-content .dividers h5 {
         text-align: center;
         color: #888;
@@ -380,14 +383,14 @@
         margin-top: -4%;
         margin-left: -1%;
     }
-    
+
     .modal .modal-content #divider-der {
         width: 8rem;
         height: 1px;
         background-color: #A7A7A7;
     }
 
-    
+
 }
 
 @media (max-width:425px) {
