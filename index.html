@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="/images/nadsat.png" type="image/icon type">
     <title>Nadsat Guide</title>
+    
 </head>
 <body>
     <section class="header">
@@ -563,7 +564,10 @@
             </div>
         </div>
     </section>
-
+    <section class="seccion4">
+        <h1 class="heading-title">Explora más en Nadsat Guide</h1>
+        <div id="map" style="width: 100%; height: 400px;"></div>
+    </section>
     <!-- footer section starts -->
     <section class="footer">
         <div class="box-container">
@@ -624,6 +628,7 @@
             
         </div>
     </section>
+    
     <!-- footer section ends -->
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -637,7 +642,7 @@
                 <div class="input-email">
                     <input type="email" name="email" id="">
                 </div>
-                <button type="submit">Continuar</button>
+                <button id="openModalReg" style="cursor:pointer;">Continuar</button>
                 <div class="dividers">
                     <div id="divider-izq"></div>
                     <h5>O continuar con</h5>
@@ -656,10 +661,59 @@
             </div>
         </div>
     </div>
+    <div id="modalRegistro" class="modalReg">
+        <div class="modal-contentReg">
+            <div class="modal-title">
+                <span class="closeReg">&times;</span>
+                <h2>Crear cuenta</h2>
+                <div id="linea-modal"></div>           
+            </div>
+            <form action="" class="form-register">
+                <div class="input-email">
+                    <input type="email" name="email" id="" placeholder="annekemorales@gmail.com" disabled>
+                    <h5>Modificar</h5>
+                </div>
+                <div class="input-name-apellido">
+                    <div class="input-name">
+                        <label for="">Nombre</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="input-apellido">
+                        <label for="">Apellido</label>
+                        <input type="text" name="apellido">
+                    </div>
+                </div>
+                <div class="input-contrasena">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="contrasena">
+                </div>
+                <div>
+                    <input  type="checkbox" id="myCheckbox">
+                    <label for="myCheckbox">Quiero recibir descuentos y otras oferas por correo electrónico</label>
+                </div>
+                <button>Crear una cuenta</button>
+            </form>
+            
+        </div>
+    </div>
 
     <script src="/js/app2.js"></script>
     <script src="/js/modal.js"></script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0ViNNu0KRUoRp3_nmAXRe-pPgmbfgvDw&callback=initMap"></script>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <!-- <script>
+        const mapDiv = document.getElementById("map");
+        let map;
+        function initMap(){
+            map = new google.maps.Map(mapDiv,{
+                center: {lat: -34.397, lng: 150.604},
+                zoom: 8,
+            });
+        }
+    </script> -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    
 
 </body>
 </html>

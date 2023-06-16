@@ -20,6 +20,12 @@ let isModalActive = false;
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
+
+const openModalBtnReg = document.getElementById("openModalReg");
+const modalReg = document.getElementById("modalRegistro")
+let isModalRegActive = false;
+const closeModalRegBtn = document.getElementsByClassName("closeReg")[0];
+
 openModalBtn.addEventListener("click", function () {
     modal.style.display = "block";
     isModalActive = true;
@@ -42,6 +48,15 @@ window.addEventListener("click", function (event) {
 
 
 
+openModalBtnReg.addEventListener("click", function () {
+    modalReg.style.display = "block";
+    isModalRegActive = true;
+})
+closeModalRegBtn.addEventListener("click", function () {
+    modalReg.style.display = "none";
+    isModalRegActive = false;
+})
+
 menu.onclick = () => {
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
@@ -51,7 +66,7 @@ menu.onclick = () => {
 window.onscroll = () => {
     menu.classList.remove('fa-times');
     navbar.classList.remove('active');
-    enableMenu();
+    // enableMenu();
 };
 
 function disableMenu() {
