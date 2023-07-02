@@ -249,11 +249,73 @@ section {
     font-weight: 400;
 }
 
+/* .navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin-left: 10px;
+} */
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background: #ffffff;
+    width: 22rem;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+    border: 1px solid #cdc4c4;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.search-bar form .input-wrapper {
+    flex: 1;
+}
+
+.search-bar form .button-wrapper {
+    margin-left: 10px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    font-size: 1.2vw;
+}
+
+.search-bar form button {
+    background: #142B6F;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 1px;
+    padding-right: 5px;
+}
+
+.search-bar form button i {
+    width: 15px;
+    margin-top: 7px;
+}
+
+
+
+
 /* SEARCHBAR STARTS*/
 
-.search-bar {
+/* .search-bar {
     background: #ffff;
-    width: 70%;
+    width: 40%;
     margin: 30px auto;
     padding: 6px 10px 6px 30px;
     border-radius: 50px;
@@ -291,9 +353,7 @@ section {
     margin-top: 7px;
 }
 
-/* .location-input{
-    flex: 1;
-} */
+
 .search-bar form label {
     font-weight: 800;
 }
@@ -317,7 +377,7 @@ label {
 
 .date-input {
     margin-left: -90px;
-}
+} */
 
 /* SEARCHBAR ENDS*/
 
@@ -764,320 +824,35 @@ strong {
     color: #2f478f
 }
 
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 26px;
-    border: 1px solid #888;
-    width: 40%;
-    border-radius: 1rem;
-}
-
-.modal-content h2 {
-    color: #142B6F;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2%;
-}
-
-.modal-content #linea-modal {
-    width: 100%;
-    height: 2px;
-    background-color: #A7A7A7;
-}
-
-.modal form {
-    margin-top: 5%;
-}
-
-.modal form label {
-    color: #142B6F;
-}
-
-.modal .input-email {
-    width: 30rem;
-    height: 2.5rem;
-    margin: 0.5rem 0 1rem 0;
-}
-
-.modal .input-email input {
-    width: 30rem;
-    height: 2.5rem;
-    font-size: 16px;
-    padding: 0.5rem;
-    font-weight: 400;
-    border: 1px solid #888;
-    border-radius: 0.5rem;
-}
-
-.modal form button {
-    width: 30rem;
-    height: 2.7rem;
-    background-color: #023047;
+.dropdown-button {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 8px 16px;
     border: none;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.modal .modal-content #divider-izq {
-    width: 35%;
-    height: 1px;
-    background-color: #A7A7A7;
-}
-
-.modal .modal-content #divider-der {
-    width: 35%;
-    height: 1px;
-    background-color: #A7A7A7;
-    margin-left: 65%;
-}
-
-.modal .modal-content .dividers {
-    margin-top: 10%;
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-}
-
-.modal .modal-content .dividers h5 {
-    text-align: center;
-    color: #888;
-    font-size: 18px;
-    width: 30%;
-    font-weight: 400;
-    margin-top: -3%;
-    margin-left: 35%;
-}
-
-.modal .otro-registro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 6rem;
-}
-
-.modal .otro-registro .btn-apple {
-    border-radius: 50%;
-    width: 50%;
-    height: 48%;
-    background-color: #000000;
-}
-
-.modal .otro-registro .btn-google {
-    border-radius: 50%;
-    width: 50%;
-    height: 48%;
-    border: 1px solid #A7A7A7;
-    padding: 2% 0 0 0;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
     cursor: pointer;
 }
 
-.modalReg {
+.dropdown-content {
     display: none;
-    position: fixed;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
-.modal-contentReg {
-    background-color: #fefefe;
-    margin: 8% auto;
-    padding: 26px;
-    border: 1px solid #888;
-    width: 40%;
-    border-radius: 1rem;
-}
-
-.modal-contentReg h2 {
-    color: #142B6F;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2%;
-}
-
-.modal-contentReg #linea-modal {
-    width: 100%;
-    height: 2px;
-    background-color: #A7A7A7;
-}
-
-
-.modalReg form {
-    margin-top: 5%;
-}
-
-.modalReg form label,
-h5 {
-    color: #142B6F;
-}
-
-.closeReg {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-
-.modalReg .input-name input {
-    width: 12rem;
-    height: 2.5rem;
-    font-size: 16px;
-    padding: 0.5rem;
-    font-weight: 400;
-    border: 1px solid #888;
-    border-radius: 0.5rem;
-    margin-right: 4rem;
-}
-
-.modalReg .input-apellido input {
-    width: 12rem;
-    height: 2.5rem;
-    font-size: 16px;
-    padding: 0.5rem;
-    font-weight: 400;
-    border: 1px solid #888;
-    border-radius: 0.5rem;
-}
-.modalReg
-.input-contrasena {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-}
-
-.modalReg .input-name-apellido {
-  display: flex;
-}
-
-.modalReg  .input-name,
-.input-apellido {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin-right: 1rem;
-  margin-top: 1rem;
-}
-
-
-/* .modalReg .input-name,
-.input-contrasena,
-.input-apellido {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-
-.modalReg .input-contrasena input {
-    width: 29rem;
-    height: 2.5rem;
-    font-size: 16px;
-    padding: 0.5rem;
-    font-weight: 400;
-    border: 1px solid #888;
-    border-radius: 0.5rem;
-}
-
-.modalReg form button {
-    width: 30rem;
-    height: 2.7rem;
-    background-color: #023047;
-    border: none;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 2rem;
-}
-
-.closeReg:hover,
-.closeReg:focus {
-    color: black;
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
     text-decoration: none;
-    cursor: pointer;
+    display: block;
 }
 
-/* 
-.modal-content h2 {
-    color: #142B6F;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 2%;
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
-
-.modal-content #linea-modal {
-    width: 100%;
-    height: 2px;
-    background-color: #A7A7A7;
-}
-
-.modal form {
-    margin-top: 5%;
-}
-
-.modal form label {
-    color: #142B6F;
-}
-
-.modal .input-email {
-    width: 30rem;
-    height: 2.5rem;
-    margin: 0.5rem 0 1rem 0;
-}
-
-.modal .input-email input {
-    width: 30rem;
-    height: 2.5rem;
-    font-size: 16px;
-    padding: 0.5rem;
-    font-weight: 400;
-    border: 1px solid #888;
-    border-radius: 0.5rem;
-}
-
-.modal form button {
-    width: 30rem;
-    height: 2.7rem;
-    background-color: #023047;
-    border: none;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 18px;
-    font-weight: 600;
-} */
