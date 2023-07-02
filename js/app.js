@@ -13,17 +13,16 @@
 //     navbar.classList.remove('active');
 // };
 
+
+
+
+
+
+
 const openModalBtn = document.getElementById("openModal");
 const modal = document.getElementById("modal");
 const closeModalBtn = document.getElementsByClassName("close")[0];
 let isModalActive = false;
-
-
-
-const openModalBtnReg = document.getElementById("openModalReg");
-const modalReg = document.getElementById("modalRegistro")
-let isModalRegActive = false;
-const closeModalRegBtn = document.getElementsByClassName("closeReg")[0];
 
 openModalBtn.addEventListener("click", function () {
     modal.style.display = "block";
@@ -46,7 +45,10 @@ window.addEventListener("click", function (event) {
 });
 
 
-
+const openModalBtnReg = document.getElementById("openModalReg");
+const modalReg = document.getElementById("modalRegistro")
+let isModalRegActive = false;
+const closeModalRegBtn = document.getElementsByClassName("closeReg")[0];
 openModalBtnReg.addEventListener("click", function () {
     modalReg.style.display = "block";
     isModalRegActive = true;
@@ -54,7 +56,7 @@ openModalBtnReg.addEventListener("click", function () {
 closeModalRegBtn.addEventListener("click", function () {
     modalReg.style.display = "none";
     isModalRegActive = false;
-})
+});
 
 const openModalBtnSes = document.getElementById("openModalSes");
 const modalSes = document.getElementById("modalSes");
@@ -65,12 +67,13 @@ openModalBtnSes.addEventListener("click", function () {
     console.log("Open modal button clicked");
     modalSes.style.display = "block";
     isModalSesActive = true;
+    disableMenu();
 });
 
 closeModalSesBtn.addEventListener("click", function () {
     modalSes.style.display = "none";
     isModalSesActive = false;
-})
+});
 
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
@@ -88,14 +91,14 @@ window.onscroll = () => {
 };
 
 function disableMenu() {
-    if (isModalActive) {
+    if (isModalActive || isModalSesActive) {
         menu.classList.remove('fa-times');
         navbar.classList.remove('active');
     }
 }
 
 function enableMenu() {
-    if (!isModalActive) {
+    if (!isModalActive || !isModalSesActive) {
         menu.classList.add('fa-times');
         navbar.classList.add('active');
     }

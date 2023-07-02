@@ -130,17 +130,6 @@
         font-size: 2.2vw;
     }
 
-    /* .temas-lista li button {
-        align-items: center;
-        border-radius: 16px 16px 0 0;
-        font-size: 1.5rem;
-        font-weight: 700;
-        line-height: 1.875rem;
-        padding: 11px 20px;
-        cursor: pointer;
-        background: #ffff;
-        color: #000000;
-    } */
     .dropdown {
         position: relative;
         display: grid;
@@ -153,6 +142,87 @@
     .temas-lista li button i {
         display: none;
     }
+
+
+    .home-packages .box-container {
+        grid-template-columns: repeat(2, minmax(15rem, 1fr));
+    }
+
+    .home-packages .box-container .image {
+        height: 30rem;
+    }
+
+    .home-packages .box-container .image img {
+        height: 30rem;
+    }
+
+    .scroll-button {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .sub-footer .box-container .box h3 {
+        font-size: 1.3rem;
+    }
+
+    .modal .dividers {
+        margin-top: 2rem;
+    }
+
+    .modal .dividers h5::before,
+    .modal .dividers h5::after {
+        width: 30%;
+    }
+
+    .modal .dividers h5::before {
+        left: -6rem;
+    }
+
+    .modal .dividers h5::after {
+        right: -6rem;
+    }
+
+    .pbox-container3 {
+        overflow-x: auto;
+        /* Cambiamos a 'auto' para mostrar el scroll solo cuando sea necesario */
+        white-space: nowrap;
+        /* Evita el salto de línea dentro del contenedor */
+    }
+
+    .box-container3 {
+        display: flex;
+    }
+
+    .box-container3 .box-c3 {
+        flex: 0 0 auto;
+    }
+
+    .scrolls3-button {
+        display: block;
+        font-size: 24px;
+        border: none;
+        background: #023047;
+        cursor: pointer;
+        width: 4rem;
+        color: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    .scrolls3-button:hover {
+        color: #FFD601
+    }
+
+    .scrolls3-button .left-button {
+        margin-right: 10px;
+    }
+
+    .scrolls3-button .right-button {
+        margin-left: 10px;
+    }
+
+
+
+
 }
 
 @media (max-width:450px) {
@@ -249,6 +319,8 @@
     .load-more {
         display: none;
     }
+
+
 
 }
 

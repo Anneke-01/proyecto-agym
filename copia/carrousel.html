@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .main-scroll-div {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cover {
+            position: relative;
+            width: 90%;
+            height: 50%;
+        }
+
+        .cover::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background-image: linear-gradient(90deg, black, transparent);
+        }
+
+        .cover::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            z-index: 99;
+            height: 100%;
+            width: 150px;
+            background-image: linear-gradient(-90deg, black, transparent);
+            
+        }
+
+        .scroll-images {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            overflow: auto;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+
+        .scroll-images::-webkit-scrollbar {
+            -webkit-appearance: none;
+        }
+
+        .child {
+            min-width: 600px;
+            height: 450px;
+            margin: 1px 10px;
+            cursor: pointer;
+            border: 1px solid rgba(207, 201, 201, .3);
+            overflow: hidden;
+        }
+
+        .child-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .icon {
+            color: aqua;
+            background-color: black;
+            font-size: 50px;
+            outline: none;
+            border: none;
+            padding: 0px 20px;
+            cursor: pointer;
+        }
+
+        .icon:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-scroll-div">
+        <div>
+            <button class="icon" onclick="scrollLeft()"><i class="fas fa-angle-double-left"></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child"><img class="child-img" src="/images/acapulco.jpg" alt=""></div>
+                <div class="child"><img class="child-img" src="/images/acapulco.jpg" alt=""></div>
+                <div class="child"><img class="child-img" src="/images/acapulco.jpg" alt=""></div>
+                <div class="child"><img class="child-img" src="/images/acapulco.jpg" alt=""></div>
+                <div class="child"><img class="child-img" src="/images/acapulco.jpg" alt=""></div>
+                <div class="child"><img class="child-img" src="/images/anna-church-fnULBa088dc-unsplash.jpg" alt=""></div>
+            </div>
+        </div>
+        <div>
+            <button class="icon" onclick="scrollRight()"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        function scrollLeft() {
+            var container = document.querySelector(".scroll-images");
+            container.scrollBy({
+                left: -350,
+                behavior: "smooth"
+            });
+        }
+
+        function scrollRight() {
+            var container = document.querySelector(".scroll-images");
+            container.scrollBy({
+                left: 350,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>
