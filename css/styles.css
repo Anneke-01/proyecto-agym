@@ -260,7 +260,7 @@ section .container {
 }
 
 
-.temas-lista li button {
+.temas-lista li .btn-active {
     align-items: center;
     border-radius: 16px 16px 0 0;
     font-size: 16px;
@@ -270,6 +270,18 @@ section .container {
     cursor: pointer;
     background: #ffff;
     color: #000000;
+    border: none;
+}
+.temas-lista  .btn-desactive {
+    align-items: center;
+    border-radius: 16px 16px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.875rem;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    background: transparent;
+    color: #ffffff;
     border: none;
 }
 
