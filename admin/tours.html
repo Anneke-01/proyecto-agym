@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Admin Panel | Easy Coding</title>
+</head>
+
+<body>
+
+    <!--  -->
+    <div class="container">
+
+        <!-- TopBar/Navbar -->
+        <div class="TopBar">
+            <div class="logo">
+                <img src="/images/nadsat.png">
+                <div class="logo-text">
+                    <h4 style="display: table-caption;">Nadsat Guide</h4>
+                   
+                </div> 
+            </div>
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+
+
+        </div>
+        <!-- SideBar -->
+        <div class="SideBar">
+
+            <ul>
+                <li>
+                    <a href="/admin/index.html">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-ticket"></i>
+                        <div>Tours</div>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <div>Afiliados</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Análisis</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>Ganancias</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div>Configuración</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div>Ayuda</div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- Main Content -->
+        <div class="Main">
+            <div class="form-crud">
+                <h2>Agregar nuevo tour</h2>
+                <form id="add-form">
+                    <input type="text" id="add-input" placeholder="Agregar elemento">
+                    <button type="submit">Agregar</button>
+                </form>
+            </div>
+            <div>
+                <ul id="item-list"></ul>
+            </div>
+            <!-- Modal -->
+            <div id="edit-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Editar elemento</h2>
+                    <input type="text" id="edit-input">
+                    <button id="save-edit">Guardar</button>
+                    <button id="cancel-edit">Cancelar</button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!--  -->
+
+    <script src="/admin/script.js"></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.admin-panel {
+    background: #f2f2f2;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.menu li a:hover {
+    background: #555;
+}
+
+.content {
+    background: #fff;
+    padding: 20px;
+}

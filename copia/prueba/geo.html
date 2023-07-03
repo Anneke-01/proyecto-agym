@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mapa de Geolocalización</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<script>
+  // Función para obtener la ubicación del usuario
+  function obtenerUbicacion() {
+    // Verificar si el navegador soporta la geolocalización
+    if (navigator.geolocation) {
+      // Solicitar la ubicación del usuario
+      navigator.geolocation.getCurrentPosition(function(position) {
+        var lat = position.coords.latitude;
+        var lng = position.coords.longitude;
+        
+        // Utilizar la ubicación del usuario
+        console.log('Latitud: ' + lat);
+        console.log('Longitud: ' + lng);
+        
+        // Aquí puedes agregar tu lógica para utilizar la ubicación del usuario, como mostrar un mapa con la ubicación o realizar acciones basadas en la ubicación.
+      }, function(error) {
+        // Manejar los errores de geolocalización
+        console.log('Error al obtener la ubicación del usuario:', error.message);
+      });
+    } else {
+      // El navegador no soporta la geolocalización
+      console.log('La geolocalización no está soportada por el navegador.');
+    }
+  }
+
+  // Llamar a la función para solicitar la ubicación del usuario
+  obtenerUbicacion();
+</script>
+<body>
+  <h1>Mapa de Geolocalización</h1>
+  <div id="map"></div>
+
+  <script>
+    // Función para inicializar el mapa
+    function initMap() {
+        // Coordenadas del National Museum of Scotland
+        var location = { lat: 55.9479, lng: -3.189 };
+  
+        // Crear un mapa centrado en la ubicación especificada
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: location,
+          zoom: 15
+        });
+  
+        // Crear un marcador en la ubicación especificada
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map,
+          title: 'National Museum of Scotland'
+        });
+    }
+    verificarPrimeraVisita();
+  </script>
+
+  <!-- Incluir la API de Google Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0ViNNu0KRUoRp3_nmAXRe-pPgmbfgvDw&callback=initMap"></script>
+</body>
+</html>

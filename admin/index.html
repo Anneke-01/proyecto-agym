@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+    <!-- Link Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Admin Panel | Easy Coding</title>
+</head>
+
+<body>
+
+    <!--  -->
+    <div class="container">
+
+        <!-- TopBar/Navbar -->
+        <div class="TopBar">
+            <div class="logo">
+                <img src="/images/nadsat.png">
+                <div class="logo-text">
+                    <h4 style="display: table-caption;">Nadsat Guide</h4>
+                   
+                </div> 
+            </div>
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+
+
+        </div>
+        <!-- SideBar -->
+        <div class="SideBar">
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-th-large"></i>
+                        <div>Dashboard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/tours.html">
+                        <i class="fas fa-ticket"></i>
+                        <div>Tours</div>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        <div>Afiliados</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-chart-bar"></i>
+                        <div>Análisis</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <div>Ganancias</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <div>Configuración</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        <div>Ayuda</div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- Main Content -->
+        <div class="Main">
+
+            <div class="MainCard">
+
+                <div class="Card">
+                    <div class="content">
+                        <div class="num">15,689</div>
+                        <div class="name">Viajeros</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="content">
+                        <div class="num">502</div>
+                        <div class="name">Visitas diarias</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-regular fa-eye"></i>
+                    </div>
+                </div>
+
+                <div class="Card">
+                    <div class="content">
+                        <div class="num">90</div>
+                        <div class="name">Afiliados</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
+
+
+                <div class="Card">
+                    <div class="content">
+                        <div class="num">$15000</div>
+                        <div class="name">Ganancias</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <!-- Charts -->
+            <div class="MainChart">
+
+                <div class="Chart">
+                    <h1>Ganancias en $ (en 12 meses)</h1>
+                    <div>
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="Chart doughnut-chart">
+                    <h1>Países más visitados</h1>
+                    <div>
+                        <canvas id="doughnut"></canvas>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!--  -->
+
+
+
+
+
+    <!-- Chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+
+</body>
+
+</html>

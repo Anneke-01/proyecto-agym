@@ -1,0 +1,101 @@
+section {
+    padding: 1rem rem 5% 0rem 5%;
+}
+
+.carrito {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+
+}
+
+.carrito .detalles-carrito {
+    grid-column: 1;
+
+}
+
+.resumen-carrito {
+    grid-column: 2;
+    /* Colocar en la segunda columna */
+}
+
+.detalles-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.detalles-carrito {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.detalles-carrito img {
+    margin-right: 1rem;
+
+}
+
+.header-subcontent-c {
+    display: flex;
+    flex-direction: row;
+}
+
+.especificaciones {
+    display: flex;
+    flex-direction: row;
+    margin: 0.2rem;
+}
+
+.especificaciones i {
+    width: 1rem;
+    margin-right: 1rem;
+
+}
+
+.total {
+    grid-row-start: 2;
+}
+
+.resumen-card {
+    width: 70%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 1rem 0 2rem 0;
+}
+
+.resumen-card .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.reservarmas {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    margin: 1% 5%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40px;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.tramitarpedido {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    margin: 1% 5%;
+    background-color: #13265E;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 40px;
+    height: 3rem;
+    cursor: pointer;
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/modals.css">
+    <link rel="stylesheet" href="/css/detalleticket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/images/nadsat.png" type="image/icon type">
+    <title>Nadsat Guide</title>
+</head>
+<body>
+    <section class="header">
+        <div class="logo">
+            <img src="/images/nadsat.png">
+            <div class="logo-text">
+                <h4 style="display: table-caption;">Nadsat Guide</h4>
+                <!-- <h4>Guide</h4> -->
+            </div> 
+        </div> 
+        <div class="search-bar">
+            <form>
+                <div class="input-wrapper">
+                    <input type="text">
+                </div>
+                <div class="button-wrapper">
+                    <button type="submit"><i class="fas fa-magnifying-glass fa-xl" style="color: #ffffff;"></i></button>
+                </div>
+            </form>
+        </div>        
+        <nav class="navbar">  
+            <div class="dropdown">
+                <button onclick="toggleDropdown()" class="dropdown-button">
+                    Español
+                  <span id="arrow"><i id="arrow-icon" class="fas fa-chevron-down"></i></span>
+                </button>
+                <div id="dropdown-content" class="dropdown-content">
+                  <a href="#">Opción 1</a>
+                  <a href="#">Opción 2</a>
+                  <a href="#">Opción 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="toggleDropdown2()" class="dropdown-button">
+                    USD(U$)
+                  <span id="arrow"><i id="arrow-icon2" class="fas fa-chevron-down"></i></span>
+                </button>
+                <div id="dropdown-content2" class="dropdown-content">
+                  <a href="#">Opción 1</a>
+                  <a href="#">Opción 2</a>
+                  <a href="#">Opción 3</a>
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-cart-shopping"></i></a>
+            <a href="#"><i class="fas fa-circle-question"></i></a>
+            <a href="#"><button class="btn-iniciarsesion" id="openModalSes">Iniciar sesión</button> </a>
+            <!-- <a href="#" class="btn-registrarse">Registrarse</a>   -->
+            <a href="#"><button class="btn-registrarse" id="openModal">Registrarse</button></a>
+           
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+
+    <section class="detalle-ticket">
+        <div class="header-content-dt">
+            <h4>Tour guiado</h4>
+            <h2>Edimburgo: tour guiado a pie de Harry Potter</h2> 
+            <div class="header-subcontent-dt">
+                <div class="stars">
+                    <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                    <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                </div>
+                <h5>4.5/5</h5>
+                <h5>11.601 opiniones</h5>
+                <h5>| Reino Unido</h5>
+            </div>   
+        </div>
+        <div class="container-image">
+            
+            <img src="/images/aditya-vyas-i-aB1BfFlXk-unsplash.jpg" alt="" id="first-image">
+            <img src="/images/tour-hp-tren.jpg" alt="" id="second-image">
+            <div class="empaque">
+                <img src="/images/tourhp.jpg" alt="" class="custom-image">
+                <img src="/images/tour-hp-letrero.jpg" alt="" class="custom-image">
+            </div>
+           
+        </div>
+    </section>
+    <section class="detalles-s2">
+        <p>Haz un tour a pie mágico por Edimburgo y descubre la ciudad donde empezó la maravillosa historia de Harry Potter.
+            Pon a prueba tus conocimientos con un test audiovisual, 
+           descubre a qué casa Hogwarts perteneces y admira la tumba de Tom Riddle.</p>
+        <div class="detalles">
+            <h2>Detalles</h2>
+            <h3 style="margin-left: 5rem;">Precio</h3>
+            <div class="precio">
+                <div class="icon">
+                    <i class="fas fa fa-money-check-dollar fa-lg"></i>
+                </div>
+                
+                <div class="tipos-precio">  
+                    <h4>Adulto</h4>
+                    <div class="circle">
+                        <h4>U$40</h4>
+                    </div>
+                </div>
+                <div class="tipos-precio">
+                    <h4>Niños (6 - 15 años)</h4>
+                    <div class="circle">
+                        <h4>U$29</h4>
+                    </div>
+                </div>
+                <div class="tipos-precio">
+                    <h4>Menos de 6 años</h4>
+                    <div class="circle">
+                        <h4>Gratis</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="duracion">
+                <div class="icon">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <h3>Duración de 3 horas</h3>
+            </div>
+            
+            <div class="guia">
+                <div class="icon">
+                    <i class="fas fa fa-user"></i>
+                </div>
+                <div class="pr">
+                    <h3>Guía</h3>
+                    <p>Alemás, francés, inglés y español</p>
+                </div>
+            </div>
+            <div class="accesibilidad">
+                <div class="icon">
+                    <i class="fas fa fa-wheelchair"></i>
+                </div>
+                <div class="pr">
+                    <h3>Accesibilidad</h3>
+                    <p>No es accesible en silla de ruedas.</p>
+                </div>
+            </div>
+            <div class="mascotas">
+                <div class="icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <div class="pr">
+                    <h3>Mascotas</h3>
+                    <p>No permitidas.</p>
+                </div>
+            </div>
+            <div class="incluye">
+                <div class="icon">
+                    <i class="fas fa fa-list-check"></i>
+                </div>
+                <div class="pr">
+                    <h3>Incluye</h3>
+                    <ul>
+                        <li>Tour a pie.</li>
+                        <li>Guía.</li>
+                        <li>Test para descubrir tu casa de Hogwarts.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div style="background: red;
+                width: 100%;
+                height: 100%;">Pruebaaa
+                <div id="map"></div>
+            </div> -->
+            <div class="mapa">
+                <div id="map"></div>
+              </div>
+            
+        </div>
+        
+        <div class="reserva">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span class="month-picker" id="month-picker">April</span>
+                    <div class="year-picker">
+                        <span class="year-change" id="prev-year">
+                            <pre><</pre>
+                        </span>
+                        <span id="year">2022</span>
+                        <span class="year-change" id="next-year">
+                            <pre>></pre>
+                        </span>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-week-day">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+               
+                <div class="month-list"></div>
+            </div>
+            <div class="dropdown3">
+                <button onclick="toggleDropdown3()" class="dropdown-button3">
+                    <div class="icon">
+                        <i class="fa-regular fa-clock"></i>
+                        <h3>Hora</h3>
+                    </div>
+                    
+                  <span id="arrow"><i id="arrow-icon3" class="fas fa-chevron-down"></i></span>
+                </button>
+                <div id="dropdown-content3" class="dropdown-content3">
+                  <a href="#">9:00 a.m.</a>
+                  <a href="#">12:00 m.</a>
+                  <a href="#">3:00 p.m.</a>
+                  <a href="#">5:00 p.m.</a>
+                </div>
+            </div>
+            <div class="dropdown4">
+                <button onclick="toggleDropdown4()" class="dropdown-button4">
+                    <div class="icon">
+                        <i class="fa-solid fa-users"></i>
+                        <h3>Personas</h3>
+                    </div>
+                    
+                  <span id="arrow"><i id="arrow-icon4" class="fas fa-chevron-down"></i></span>
+                </button>
+                <div id="dropdown-content4" class="dropdown-content4">
+                  <div class="tipo-persona">
+                    <p>Adultos</p>
+                    <div class="cantidad">
+                        <div class="rprecio">
+                            <p>US40</p>
+                        </div>
+                        <div class="agregar">
+                            <button class="btn-decrement"><i class="fas fa fa-minus"></i></button>
+                            <p class="cantidad-valor">0</p>
+                            <button class="btn-increment"><i class="fa-regular fa-plus"></i></button>
+                        </div>
+                        <span>U$</span><p class="total">0</p>
+                    </div>
+                  </div>
+                  <div class="tipo-persona">
+                    <p>Niños (6-17 años)</p>
+                    <div class="cantidad">
+                        <div class="rprecio">
+                            <p>US29</p>
+                        </div>
+                        <div class="agregar">
+                            <button class="btn-decrement"><i class="fas fa fa-minus"></i></button>
+                            <p class="cantidad-valor">0</p>
+                            <button class="btn-increment"><i class="fa-regular fa-plus"></i></button>
+                        </div>
+                        <span>U$</span><p class="total">0</p>
+                    </div>
+                  </div>
+                  <div class="tipo-persona">
+                    <p>Menoresde 6 años</p>
+                    <div class="cantidad">
+                        <div class="rprecio">
+                            <p>US40</p>
+                        </div>
+                        <div class="agregar">
+                            <button class="btn-decrement"><i class="fas fa fa-minus"></i></button>
+                            <p class="cantidad-valor">0</p>
+                            <button class="btn-increment"><i class="fa-regular fa-plus"></i></button>
+                        </div>
+                        <span>U$</span><p class="total">0</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div>
+                <a href="/carrito.html"><button class="btn-reserva">Reservar</button></a>
+            </div>
+
+            <div class="itinerario">
+                <h2>Tu experiencia</h2>
+                <p>Itinerario</p>
+                <p>Paradas principales</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Asistencia</h3>
+                <a href="">Contacto</a>
+                <a href="">Información legal</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Cookies</a>
+                <a href="">Términos y condiciones</a>
+            </div>
+            <div class="box">
+                <h3>Empresa</h3>
+                <a href="">Sobre nosotros</a>
+                <a href="">Empleo</a>
+            </div>
+            <div class="box">
+                <h3>Trabaja con nosotros</h3>
+                <a href="">Afiliados</a>
+                <a href="">Agencias de viajes</a>
+                <a href="">Alojamiento</a>
+                <a href="">Proveedores</a>
+            </div>
+            <div class="box">
+                <h3>Métodos de pago</h3>
+                <i class="fa-brands fa-cc-visa fa-2xl" style="color: #ffffff;"></i>
+            </div>
+            
+        </div>
+
+        
+    </section>
+    <section class="sub-footer">
+        <div class="box-container">
+            <div class="box">
+                <div class="logo">
+                    <img style="width: 3rem;" src="/images/logo.png">
+                    <div class="logo-text">
+                        <h4 style="color:#ffffff;display: table-caption;
+                        font-weight: 800;
+                        margin-left: 0.5rem;">Nadsat Guide</h4>
+                    </div> 
+                </div>
+            </div>
+            <div class="box">
+                <h3 style="color:#ffffff;"><span>&copy; 2023 Nadsat Guide. Creado en Nicaragua.</span></h3>
+            </div>
+            <div class="box" style="padding-left: 28%;padding-top: 1rem;">
+                <a href=""><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest fa-xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
+                
+                
+                
+                
+            </div>
+            
+        </div>
+    </section>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0ViNNu0KRUoRp3_nmAXRe-pPgmbfgvDw&callback=initMap"></script>
+    <script type="text/javascript" src="/js/mapdt.js"></script>
+    <script src="/js/calendar.js"></script>
+    <script src="/js/dropdown.js"></script>
+</body>
+</html>
