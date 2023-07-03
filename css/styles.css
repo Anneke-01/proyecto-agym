@@ -24,7 +24,8 @@
     outline: none;
     /* border: none; */
     text-decoration: none;
-    
+    list-style: none;
+
 }
 
 /* html {
@@ -272,7 +273,8 @@ section .container {
     color: #000000;
     border: none;
 }
-.temas-lista  .btn-desactive {
+
+.temas-lista .btn-desactive {
     align-items: center;
     border-radius: 16px 16px 0 0;
     font-size: 16px;
@@ -364,6 +366,7 @@ section .container {
     height: 16rem;
     /* object-fit: cover; */
     transition: 0.5s all ease-in-out;
+    cursor: pointer;
 }
 
 .home-packages .box-container .image:hover img {
