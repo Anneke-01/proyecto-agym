@@ -314,7 +314,7 @@
 
 }
 
-@media (max-width:425px) {
+/* @media (max-width:425px) {
     .temas {
         position: absolute;
         top: 35.5rem;
@@ -323,11 +323,6 @@
         padding: 0rem 1%;
     }
 
-    /* section .container {
-        display: block;
-        min-width: 320px;
-        padding: 0 7px 0 0px;
-    } */
 
     .temas .container .temas-lista {
         justify-content: space-between;
@@ -337,7 +332,6 @@
         display: flex;
         flex-grow: 1;
         margin: 0;
-        /* overflow-x: scroll; */
         padding: 0;
         vertical-align: baseline;
     }
@@ -395,7 +389,7 @@
         overflow: hidden;
     }
 
-}
+} */
 
 @media (max-width:320px) {
     .temas {
@@ -488,8 +482,18 @@
         overflow: hidden;
     }
 
+
+
+
+
+
+
+
+
+
 }
-@media (max-width:449px) {
+
+@media (min-width: 321px) and (max-width: 449px) {
     .temas {
         position: absolute;
         top: 35.5rem;
@@ -541,14 +545,14 @@
     }
 
     .header .search-bar {
-        width: 22rem;
+        width: 30rem;
         padding: 3% 3% 3% 5%;
     }
 
     .logo-text h4 {
 
-        font-weight: 800;
-        font-size: 1.4rem;
+        font-weight: 900;
+        font-size: 1.8rem;
     }
 
     .logo img {
@@ -562,6 +566,10 @@
     .search-bar form button {
         padding-bottom: 0;
         padding-right: 0;
+    }
+
+    .search-bar form {
+        height: 2rem;
     }
 
     .heading-title {
@@ -579,5 +587,25 @@
         width: 35rem;
         overflow: hidden;
     }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 29% auto;
+        padding: 1rem 1rem 1rem 1rem;
+        border: 1px solid #888;
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 }

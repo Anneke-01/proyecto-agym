@@ -1,0 +1,43 @@
+@media (min-width: 321px) and (max-width: 449px) {
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 29% auto;
+        padding: 1rem 1rem 1rem 1rem;
+        border: 1px solid #888;
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+
+    .closeSes, .close {
+        font-size: 2.5rem;
+    }
+    .modal form label {
+        font-size: 1.5rem;
+    }
+
+    .modal .input-email input {
+        width: 26rem;
+        font-size: 1.3rem;
+    }
+
+    .modal form button {
+        width: 26rem;
+        font-size: 1.5em;
+    }
+
+    .modal .dividers h5{
+        font-size: 1.5rem;
+    }
+
+    .modal .dividers h5::before, .modal .dividers h5::after {
+        width: 55%;
+    }
+    .modal .dividers h5::before{
+        left: -7rem;
+    }
+    .modal .dividers h5::after{
+        right: -7rem;
+    }
+}
