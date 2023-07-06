@@ -75,6 +75,30 @@ closeModalSesBtn.addEventListener("click", function () {
     isModalSesActive = false;
 });
 
+const openModalSesNext = document.getElementById("openModalSesNext");
+const modalSesNext = document.getElementById("modalSesionNext");
+let isModalSesionNextActive = false;
+const closeModalSesNextBtn = document.getElementsByClassName("closeSN")[0];
+
+openModalSesNext.addEventListener("click", function () {
+    modalSesNext.style.display = "block";
+    isModalSesionNextActive = true;
+    disableMenu();
+});
+
+closeModalSesNextBtn.addEventListener("click", function () {
+    modalSesNext.style.display = "none";
+    isModalSesionNextActive = false;
+});
+
+
+
+
+
+
+
+
+
 let menu = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.header .navbar');
 
@@ -103,3 +127,4 @@ function enableMenu() {
         navbar.classList.add('active');
     }
 }
+

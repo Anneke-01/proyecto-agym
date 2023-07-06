@@ -87,6 +87,9 @@
             <a href="#"><button class="btn-iniciarsesion" id="openModalSes">Iniciar sesión</button> </a>
             <!-- <a href="#" class="btn-registrarse">Registrarse</a>   -->
             <a href="#"><button class="btn-registrarse" id="openModal">Registrarse</button></a>
+            <a href="#"><button class="" id="nombre-usuario"></button></a>
+            <a href="#"><button class="" id="salir"><i class="fas fa fa-arrow-right-from-bracket"></i></button></a>
+           
            
         </nav>
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -712,10 +715,10 @@
                 <h2>Regístrate</h2>
                 <div id="linea-modal"></div>           
             </div>
-            <form action="" class="form-register">
+            <form action="" class="form-register" id="form-register-p1">
                 <label for="">Email</label>
                 <div class="input-email">
-                    <input type="email" name="email" id="" placeholder="Ejemplo: ana@gmail.com" required>
+                    <input type="email" name="email" id="email-register" placeholder="Ejemplo: ana@gmail.com">
                 </div>
                 <button id="openModalReg" style="cursor:pointer;" type="submit">Continuar</button>
                 <div class="dividers">    
@@ -723,7 +726,7 @@
                 </div>
             </form> 
             <div class="otro-registro">
-                <a href="https://accounts.google.com/""><iconify-icon icon="flat-color-icons:google" style="color: white;" width="30"></iconify-icon></a>
+                <a href="https://accounts.google.com/"><iconify-icon icon="flat-color-icons:google" style="color: white;" width="30"></iconify-icon></a>
                 <a href="https://facebook.com/"><iconify-icon icon="logos:facebook"  width="30"></iconify-icon></a>
                 <a href="https://www.icloud.com/"><iconify-icon icon="ic:baseline-apple" style="color: rgb(247, 247, 247);" width="30"></iconify-icon></a>
             </div>
@@ -738,30 +741,29 @@
             </div>
             <form action="" class="form-register">
                 <div class="input-email">
-                    <input type="email" name="email" id="" placeholder="annekemorales@gmail.com" disabled>
-                    <h5>Modificar</h5>
+                    <input type="email" name="email" id="email-registro-placeholder" placeholder="" disabled>
+                    <a href="#"><h5>Modificar</h5></a>
                 </div>
                 <div class="input-name-apellido">
                     <div class="input-name">
                         <label for="">Nombre</label>
-                        <input type="text" name="name" required>
+                        <input type="text" name="name" id="name-register">
                     </div>
                     <div class="input-apellido">
                         <label for="">Apellido</label>
-                        <input type="text" name="apellido" required>
+                        <input type="text" name="apellido" id="apellido-register">
                     </div>
                 </div>
                 <div class="input-contrasena">
                     <label for="">Contraseña</label>
-                    <input type="password" name="contrasena" required>
+                    <input type="password" name="contrasena" id="contrasena-register">
                 </div>
                 <div>
                     <input  type="checkbox" id="myCheckbox">
                     <label for="myCheckbox">Quiero recibir descuentos y otras oferas por correo electrónico</label>
                 </div>
-                <button>Crear una cuenta</button>
+                <button type="submit">Crear una cuenta</button>
             </form>
-            
         </div>
     </div>
     <!-- Modal de sesión-->
@@ -773,12 +775,12 @@
                 <h2>Inicia sesión</h2>
                 <div id="linea-modal"></div>           
             </div>
-            <form action="" class="form-register">
+            <form action="" class="form-sesion">
                 <label for="">Email</label>
                 <div class="input-email">
-                    <input type="email" name="email" id="" required>
+                    <input type="email" name="email" id="email-sesion">
                 </div>
-                <button id="" style="cursor:pointer;">Continuar</button>
+                <button id="openModalSesNext" type="submit" style="cursor:pointer;">Continuar</button>
                 <div class="dividers">
                     <h5>O continuar con</h5>
                 </div>
@@ -790,7 +792,32 @@
             </div>
         </div>
     </div>
+    <div id="modalSesionNext" class="modalReg">
+        <div class="modal-contentReg">
+            <div class="modal-title">
+                <span class="closeSN">&times;</span>
+                <h2>¡Hola de nuevo!</h2>
+                <div id="linea-modal"></div>           
+            </div>
+            <form action="" class="form-sesion">
+                <div class="input-email">
+                    <input type="email" name="email" id="email-sesion-placeholder" placeholder="" disabled>
+                    <a href="#"><h5>Modificar</h5></a>
+                </div>
+    
+                <div class="input-contrasena">
+                    <label for="">Ingresa tu contraseña</label>
+                    <input type="password" name="contrasena" id="contrasena-sesion">
+                </div>
+                <div>
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+                </div>
+                <button type="submit">Crear una cuenta</button>
+            </form>
+        </div>
+    </div>
     <script src="/js/app.js"></script>
+    <script src="/js/validaciones.js"></script>
     <script src="/js/dropdown.js"></script>
     <script src="/js/modal.js"></script>
     <script src="/js/scrolls2.js"></script>
