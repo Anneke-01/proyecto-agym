@@ -95,7 +95,6 @@
     }
 
 
-
     .header .navbar {
         position: absolute;
         top: 99%;
@@ -121,7 +120,7 @@
     .header .search-bar {
         display: block;
         text-align: center;
-        width: 40rem;
+        width: 32rem;
     }
 
     .header .search-bar input[type="text"] {
@@ -135,6 +134,14 @@
 
     .dropdown-content {
         position: relative;
+    }
+
+    .logo-text {
+        font-size: 1.8rem;
+    }
+
+    .logo-text h4 {
+        font-weight: 900;
     }
 
     .temas-lista li button i {
@@ -182,9 +189,7 @@
 
     .pbox-container3 {
         overflow-x: auto;
-        /* Cambiamos a 'auto' para mostrar el scroll solo cuando sea necesario */
         white-space: nowrap;
-        /* Evita el salto de línea dentro del contenedor */
     }
 
     .box-container3 {
@@ -217,9 +222,6 @@
     .scrolls3-button .right-button {
         margin-left: 10px;
     }
-
-
-
 
 
 }
@@ -259,11 +261,6 @@
         padding: 0rem 1%;
     }
 
-    /* section .container {
-        display: block;
-        min-width: 320px;
-        padding: 0 7px 0 0px;
-    } */
 
     .temas .container .temas-lista {
         justify-content: space-between;
@@ -273,7 +270,6 @@
         display: flex;
         flex-grow: 1;
         margin: 0;
-        /* overflow-x: scroll; */
         padding: 0;
         vertical-align: baseline;
     }
@@ -289,7 +285,7 @@
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 1.875rem;
-        padding: 0.5rem 1.5rem;
+        padding: 0;
         cursor: pointer;
         background: #ffff;
         color: #000000;
@@ -312,170 +308,9 @@
         gap: 2rem;
     }
 
-    /* .home-packages .box-container::-webkit-scrollbar{
-        width: 0;
-    } */
     .load-more {
         display: none;
     }
-
-
-
-}
-
-/* @media (max-width:377px) */
-@media (width <=375px) {
-    .temas {
-        position: absolute;
-        top: 35.5rem;
-        width: 100%;
-        z-index: 1;
-        padding: 0rem 1%;
-    }
-
-    /* section .container {
-        display: block;
-        min-width: 320px;
-        padding: 0 7px 0 0px;
-    } */
-
-    .temas .container .temas-lista {
-        justify-content: space-between;
-    }
-
-    .temas-lista {
-        display: flex;
-        flex-grow: 1;
-        margin: 0;
-        /* overflow-x: scroll; */
-        padding: 0;
-        vertical-align: baseline;
-    }
-
-    .temas-lista li {
-        display: list-item;
-    }
-
-
-    .temas-lista li button {
-        align-items: center;
-        border-radius: 10px 10px 0 0;
-        font-size: 1.2rem;
-        font-weight: 500;
-        line-height: 1.875rem;
-        padding: 0.5rem 1.5rem;
-        cursor: pointer;
-        background: #ffff;
-        color: #000000;
-        border: none;
-    }
-
-    .temas-lista li button i {
-        display: none;
-    }
-
-    .logo-text h4 {
-
-        font-weight: 800;
-        font-size: 2rem;
-    }
-
-    .home-packages .box-container {
-        display: flex;
-        overflow-x: scroll;
-        gap: 2rem;
-    }
-
-    /* .home-packages .box-container::-webkit-scrollbar{
-        width: 0;
-    } */
-    .load-more {
-        display: none;
-    }
-
-    .home-packages .box-container .image {
-        height: 36rem;
-        width: 35rem;
-        overflow: hidden;
-    }
-
-    .seccion2 {
-        display: none;
-    }
-
-    .seccion3 {
-        display: none;
-    }
-
-    .modal-content {
-        background-color: #fefefe;
-        margin: 35% auto;
-        padding: 2rem;
-        border: 1px solid #888;
-        width: 75%;
-        border-radius: 1rem;
-    }
-
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 2rem;
-        font-weight: bold;
-    }
-
-    .search-bar form input,
-    label {
-        font-size: 1.5rem;
-    }
-
-    .modal .input-email input {
-        width: 26rem;
-        height: 2.5rem;
-        font-size: 1.5rem;
-        padding: 0.5rem;
-        font-weight: 400;
-        border: 1px solid #888;
-        border-radius: 0.5rem;
-    }
-
-    .modal form button {
-        width: 26rem;
-        height: 2.7rem;
-        background-color: #023047;
-        border: none;
-        border-radius: 0.5rem;
-        color: white;
-        font-size: 1.8rem;
-        font-weight: 600;
-    }
-
-    .modal .modal-content .dividers {
-        margin-top: 10%;
-        display: flex;
-    }
-
-    .modal .modal-content #divider-izq {
-        width: 8rem;
-        height: 1px;
-        background-color: #A7A7A7;
-    }
-
-    .modal .modal-content .dividers h5 {
-        text-align: center;
-        color: #888;
-        font-size: 1.125rem;
-        width: 11.5rem;
-        font-weight: 400;
-        margin-top: -4%;
-        margin-left: -1%;
-    }
-
-    .modal .modal-content #divider-der {
-        width: 8rem;
-        height: 1px;
-        background-color: #A7A7A7;
-    }
-
 
 }
 
@@ -518,7 +353,7 @@
         font-size: 1.2rem;
         font-weight: 500;
         line-height: 1.875rem;
-        padding: 0.5rem 1.5rem;
+        padding: 0;
         cursor: pointer;
         background: #ffff;
         color: #000000;

@@ -80,27 +80,27 @@ section {
     box-shadow: var(--box-shadow);
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 60px;
 }
 
 /*LOGO STARTS*/
 .logo {
     color: #000000;
-    font-size: 18px;
+    margin-left: -1.1rem;
 }
 
 .logo img {
-    margin-left: -7px
+    margin-left: -7px;
 }
 
 .logo-text {
     display: inline-block;
-    margin-left: -10px;
+    margin-left: 0rem;
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 
 .logo-text h4 {
-
     font-weight: 900;
 }
 
@@ -207,7 +207,7 @@ section {
     border: 0;
     outline: none;
     background: transparent;
-    font-size: 1.2vw;
+    font-size: 1rem;
 }
 
 .search-bar form button {
@@ -264,7 +264,7 @@ section .container {
 .temas-lista li .btn-active {
     align-items: center;
     border-radius: 16px 16px 0 0;
-    font-size: 16px;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.875rem;
     padding: 1rem 2.5rem;
@@ -277,7 +277,7 @@ section .container {
 .temas-lista .btn-desactive {
     align-items: center;
     border-radius: 16px 16px 0 0;
-    font-size: 16px;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.875rem;
     padding: 1rem 2.5rem;
@@ -352,7 +352,8 @@ section .container {
 
 .home-packages .box-container {
     display: grid;
-    grid-template-columns: repeat(4, 24%);
+    /* grid-template-columns: repeat(4, 24%); */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
 
