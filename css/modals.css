@@ -47,7 +47,7 @@
 }
 
 .modal .input-email input {
-    width: 30rem;
+    width: 100%;
     height: 2.5rem;
     font-size: 16px;
     padding: 0.5rem;
@@ -57,7 +57,7 @@
 }
 
 .modal form button {
-    width: 30rem;
+    width: 100%;
     height: 2.7rem;
     background-color: #023047;
     border: none;
@@ -281,6 +281,7 @@ h5 {
     text-decoration: none;
     cursor: pointer;
 }
+
 /* FIN MODAL REGISTRO*/
 
 /* 

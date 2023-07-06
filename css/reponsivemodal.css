@@ -1,11 +1,11 @@
-@media (min-width: 400px) and (max-width: 449px) {
+@media (min-width: 400px) and (max-width: 499px) {
 
     .modal-content {
         background-color: #fefefe;
         margin: 29% auto;
         padding: 1rem 1rem 1rem 1rem;
         border: 1px solid #888;
-        width: 50%;
+        width: 75%;
         border-radius: 1rem;
     }
 
@@ -19,13 +19,13 @@
         font-size: 1.5rem;
     }
 
-    .modal .input-email input {
-        width: 26rem;
+    .modal .input-email {
+        width: 100%;
         font-size: 1.3rem;
     }
 
     .modal form button {
-        width: 26rem;
+        width: 100%;
         font-size: 1.5em;
     }
 
@@ -47,14 +47,14 @@
     }
 }
 
-@media (min-width: 321px) and (max-width: 393px) {
+@media (min-width: 321px) and (max-width: 399px) {
 
     .modal-content {
         background-color: #fefefe;
         margin: 29% auto;
         padding: 1rem 1rem 1rem 1rem;
         border: 1px solid #888;
-        width: 50%;
+        width: 70%;
         border-radius: 1rem;
     }
 
@@ -68,13 +68,13 @@
         font-size: 1.5rem;
     }
 
-    .modal .input-email input {
-        width: 22rem;
+    .modal .input-email {
+        width: 100%;
         font-size: 1.3rem;
     }
 
     .modal form button {
-        width: 22rem;
+        width: 100%;
         font-size: 1.5em;
     }
 
@@ -176,7 +176,7 @@
         font-size: 1.3em;
     }
 
-    
+
 
 }
 
