@@ -260,7 +260,7 @@ section .container {
     display: list-item;
 }
 
-.temas-lista li button{
+.temas-lista li button {
     align-items: center;
     border-radius: 16px 16px 0 0;
     font-size: 1.3rem;
@@ -376,12 +376,12 @@ section .container {
 
 
 .content-title {
-    height: 2.7rem;
+    height: 3rem;
 }
 
 .content-title h3 {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .tarjetas .box-container .box .content h3,
@@ -393,7 +393,7 @@ strong {
 .ticket-color {
     color: #949494;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .home-packages .box-container .box .content .duracion {

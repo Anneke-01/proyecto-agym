@@ -10,9 +10,11 @@
     }
 
 
-    .closeSes, .close {
+    .closeSes,
+    .close {
         font-size: 2.5rem;
     }
+
     .modal form label {
         font-size: 1.5rem;
     }
@@ -27,20 +29,24 @@
         font-size: 1.5em;
     }
 
-    .modal .dividers h5{
+    .modal .dividers h5 {
         font-size: 1.5rem;
     }
 
-    .modal .dividers h5::before, .modal .dividers h5::after {
+    .modal .dividers h5::before,
+    .modal .dividers h5::after {
         width: 55%;
     }
-    .modal .dividers h5::before{
+
+    .modal .dividers h5::before {
         left: -7rem;
     }
-    .modal .dividers h5::after{
+
+    .modal .dividers h5::after {
         right: -7rem;
     }
 }
+
 @media (min-width: 321px) and (max-width: 393px) {
 
     .modal-content {
@@ -53,9 +59,11 @@
     }
 
 
-    .closeSes, .close {
+    .closeSes,
+    .close {
         font-size: 2.5rem;
     }
+
     .modal form label {
         font-size: 1.5rem;
     }
@@ -70,17 +78,114 @@
         font-size: 1.5em;
     }
 
-    .modal .dividers h5{
+    .modal .dividers h5 {
         font-size: 1.3rem;
     }
 
-    .modal .dividers h5::before, .modal .dividers h5::after {
+    .modal .dividers h5::before,
+    .modal .dividers h5::after {
         width: 50%;
     }
-    .modal .dividers h5::before{
+
+    .modal .dividers h5::before {
         left: -6rem;
     }
-    .modal .dividers h5::after{
+
+    .modal .dividers h5::after {
         right: -6rem;
+    }
+}
+
+@media (max-width:320px) {
+    .modal-content {
+        background-color: #fefefe;
+        margin: 29% auto;
+        padding: 1rem 1rem 1rem 1rem;
+        border: 1px solid #888;
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+
+    .closeSes,
+    .close,
+    .closeReg {
+        font-size: 2.5rem;
+    }
+
+    .modal form label {
+        font-size: 1.5rem;
+    }
+
+    .modal .input-email input {
+        width: 18rem;
+        font-size: 1rem;
+    }
+
+    .modal form button {
+        width: 18rem;
+        font-size: 1.3em;
+    }
+
+    .modal .dividers h5 {
+        font-size: 1rem;
+    }
+
+    .modal .dividers h5::before,
+    .modal .dividers h5::after {
+        width: 50%;
+    }
+
+    .modal .dividers h5::before {
+        left: -5rem;
+    }
+
+    .modal .dividers h5::after {
+        right: -5rem;
+    }
+
+    .modal-contentReg {
+        background-color: #fefefe;
+        margin: 29% auto;
+        padding: 1rem 1rem 1rem 1rem;
+        border: 1px solid #888;
+        width: 50%;
+        border-radius: 1rem;
+    }
+
+    .modalReg .input-name-apellido {
+        display: block;
+        width: 18rem;
+    }
+
+    .modalReg .input-contrasena {
+        display: block;
+
+    }
+
+    .modalReg .form-register .input-name input,
+    .modalReg .form-register .input-apellido input,
+    .modalReg .form-register .input-contrasena input,
+    .modalReg .form-register .input-email input {
+        font-size: 1rem;
+        width: 18rem;
+    }
+
+    .modalReg form button {
+        width: 18rem;
+        font-size: 1.3em;
+    }
+
+    
+
+}
+
+@media (min-width:1920px) {
+    .modal-content {
+        width: 28%;
+    }
+
+    .modal-contentReg {
+        width: 28%;
     }
 }
