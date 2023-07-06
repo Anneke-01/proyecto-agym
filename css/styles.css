@@ -223,7 +223,7 @@ section {
 }
 
 .search-bar form button i {
-    width: 15px;
+    width: 2rem;
     margin-top: 7px;
 }
 
@@ -260,8 +260,7 @@ section .container {
     display: list-item;
 }
 
-
-.temas-lista li .btn-active {
+.temas-lista li button{
     align-items: center;
     border-radius: 16px 16px 0 0;
     font-size: 1.3rem;
@@ -269,22 +268,17 @@ section .container {
     line-height: 1.875rem;
     padding: 1rem 2.5rem;
     cursor: pointer;
-    background: #ffff;
-    color: #000000;
     border: none;
 }
 
+.temas-lista li .btn-active {
+    background: #ffff;
+    color: #000000;
+}
+
 .temas-lista .btn-desactive {
-    align-items: center;
-    border-radius: 16px 16px 0 0;
-    font-size: 1.3rem;
-    font-weight: 600;
-    line-height: 1.875rem;
-    padding: 1rem 2.5rem;
-    cursor: pointer;
     background: transparent;
     color: #ffffff;
-    border: none;
 }
 
 /* CATEGORIES ENDS*/
