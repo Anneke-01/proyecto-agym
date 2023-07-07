@@ -41,7 +41,7 @@
       </script>
 </head>
 <body>
-    <div id="pago-exitoso" style="display: none;">
+    <div id="pago-exitoso" style="display: none;" >
         <div class="barra"><input style="visibility: hidden;"></div>
         <div class="pago-e-container">
             <iconify-icon icon="ei:check" style="color: #058e6e;" width="30" height="30"></iconify-icon>
@@ -918,16 +918,21 @@
     
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0ViNNu0KRUoRp3_nmAXRe-pPgmbfgvDw&callback=initMap"></script>
     <script type="text/javascript" src="/js/map.js"></script>
-    <!-- <script>
-        const mapDiv = document.getElementById("map");
-        let map;
-        function initMap(){
-            map = new google.maps.Map(mapDiv,{
-                center: {lat: -34.397, lng: 150.604},
-                zoom: 8,
-            });
-        }
-    </script> -->
+    <script>
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            const pagoExitoso = document.getElementById("pago-exitoso");
+            const indicadorPagoExitoso = localStorage.getItem("pagoExitoso");
+            const temasTop = document.getElementsByClassName("temas");
+            if (indicadorPagoExitoso === "true") {
+              pagoExitoso.style.display = "block";
+              for (let i = 0; i < temasTop.length; i++) {
+                temasTop[i].style.top = "42rem";
+              }
+            }
+            localStorage.removeItem("pagoExitoso");
+          });
+    </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     
 

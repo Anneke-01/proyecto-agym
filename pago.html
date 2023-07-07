@@ -387,13 +387,12 @@
     <script type="text/javascript" src="/js/map.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script>
-        // Obtener referencia al botón
         const pagarAhoraButton = document.getElementById("pagar-ahora");
 
-        // Agregar un event listener para el evento de clic
         pagarAhoraButton.addEventListener("click", function() {
-            // Redirigir al usuario a "index.html"
-            window.location.href = "/index.html#pago-exitoso";
+
+            window.location.href = "/index.html";
+            localStorage.setItem("pagoExitoso", true)
         });
     </script>
 
