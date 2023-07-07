@@ -28,8 +28,57 @@ section {
     padding: 1rem rem 5% 0rem 5%;
 }
 
+/* INICIO DE IMÁGENES */
+.container-image {
+    position: relative;
+    overflow: hidden;
+}
 
-.detalle-ticket {
+.image-container {
+    display: flex;
+    gap: 1.5rem;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-padding: 0.5rem;
+}
+
+.image-container img {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    width: 32rem;
+    height: 30rem;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: #888;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button {
+    left: 1rem;
+}
+
+.next-button {
+    right: 1rem;
+}
+
+
+
+
+
+
+/* FIN DE IMÁGENES*/
+
+/* .detalle-ticket {
     margin-top: 4rem;
 
 }
@@ -45,7 +94,6 @@ section {
 .container-image {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    /* Ajustar los valores aquí */
     gap: 1.5rem;
 }
 
@@ -74,9 +122,11 @@ section {
     width: 17.7rem;
     height: 16.7rem;
 
-}
+} */
 
-.detalles-s2 {
+
+
+/* .detalles-s2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
@@ -88,7 +138,40 @@ section {
 
 .reserva {
     grid-column: 2 / span 1;
+} */
+
+.detalles-s2 {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.detalles {
+    flex-basis: 50%;
+}
+
+.reserva {
+    flex-basis: 50%;
+}
+
+
+@media (min-width: 768px) {
+    .detalles-s2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .detalles {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 2;
+    }
+
+    .reserva {
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 2;
+    }
+}
+
+
+
 
 .precio {
     display: flex;
@@ -158,226 +241,55 @@ section {
     align-items: center;
 }
 
-.calendar {
-    height: max-content;
-    width: max-content;
-    background-color: var(--bg-main);
-    border-radius: 30px;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.light .calendar {
-    box-shadow: var(--shadow);
+/* INICIO CALENDARIO */
+.calendar-container {
+    max-width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
 }
 
 .calendar-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 25px;
-    font-weight: 600;
-    color: var(--color-txt);
-    padding: 10px;
-}
-
-.calendar-body {
-    padding: 10px;
-}
-
-.calendar-week-day {
-    height: 50px;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    font-weight: 600;
-}
-
-.calendar-week-day div {
-    display: grid;
-    place-items: center;
-    color: var(--bg-second);
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .calendar-days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
-    color: var(--color-txt);
-}
-
-.calendar-days div {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    position: relative;
-    cursor: pointer;
-    animation: to-top 1s forwards;
-}
-
-.calendar-days div span {
-    position: absolute;
-}
-
-.calendar-days div:hover span {
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-}
-
-.calendar-days div span:nth-child(1),
-.calendar-days div span:nth-child(3) {
-    width: 2px;
-    height: 0;
-    background-color: var(--color-txt);
-}
-
-.calendar-days div:hover span:nth-child(1),
-.calendar-days div:hover span:nth-child(3) {
-    height: 100%;
-}
-
-.calendar-days div span:nth-child(1) {
-    bottom: 0;
-    left: 0;
-}
-
-.calendar-days div span:nth-child(3) {
-    top: 0;
-    right: 0;
-}
-
-.calendar-days div span:nth-child(2),
-.calendar-days div span:nth-child(4) {
-    width: 0;
-    height: 2px;
-    background-color: var(--color-txt);
-}
-
-.calendar-days div:hover span:nth-child(2),
-.calendar-days div:hover span:nth-child(4) {
-    width: 100%;
-}
-
-.calendar-days div span:nth-child(2) {
-    top: 0;
-    left: 0;
-}
-
-.calendar-days div span:nth-child(4) {
-    bottom: 0;
-    right: 0;
-}
-
-.calendar-days div:hover span:nth-child(2) {
-    transition-delay: 0.2s;
-}
-
-.calendar-days div:hover span:nth-child(3) {
-    transition-delay: 0.4s;
-}
-
-.calendar-days div:hover span:nth-child(4) {
-    transition-delay: 0.6s;
-}
-
-.calendar-days div.curr-date,
-.calendar-days div.curr-date:hover {
-    background-color: var(--blue);
-    color: var(--white);
-    border-radius: 50%;
-}
-
-.calendar-days div.curr-date span {
-    display: none;
-}
-
-.month-picker {
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.month-picker:hover {
-    background-color: var(--color-hover);
-}
-
-.year-picker {
-    display: flex;
-    align-items: center;
-}
-
-.year-change {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.year-change:hover {
-    background-color: var(--color-hover);
-}
-
-.calendar-footer {
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.toggle {
-    display: flex;
-}
-
-.toggle span {
-    margin-right: 10px;
-    color: var(--color-txt);
-}
-
-.month-list {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--bg-main);
-    padding: 20px;
-    grid-template-columns: repeat(3, auto);
-    gap: 5px;
-    display: grid;
-    transform: scale(1.5);
-    visibility: hidden;
-    pointer-events: none;
-}
-
-.month-list.show {
-    transform: scale(1);
-    visibility: visible;
-    pointer-events: visible;
-    transition: all 0.2s ease-in-out;
-}
-
-.month-list>div {
-    display: grid;
-    place-items: center;
-}
-
-.month-list>div>div {
-    width: 100%;
-    padding: 5px 20px;
-    border-radius: 10px;
     text-align: center;
-    cursor: pointer;
-    color: var(--color-txt);
+    margin-bottom: 10px;
 }
 
-.month-list>div>div:hover {
-    background-color: var(--color-hover);
+.day {
+    font-weight: bold;
 }
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-date {
+    text-align: center;
+    padding: 5px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.calendar-date:hover {
+    background-color: #e6e6e6;
+}
+
+@media screen and (max-width: 480px) {
+    .calendar-container {
+        max-width: 100%;
+    }
+}
+
+/* FIN CALENDARIO */
 
 .reserva .dropdown3 {
     position: relative;

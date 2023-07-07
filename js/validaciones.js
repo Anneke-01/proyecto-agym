@@ -31,11 +31,11 @@ if (nameUser != null || emailUser != null) {
     console.log("Valor obtenido del localStorage:", nameUser);
     btnIniciarSesion.style.display = "none";
     btnRegistrarse.style.display = "none";
-    nombreUsuario.style.display = "block";
+    nombreUsuario.style.display = "inline-flex";
     nombreUsuario.innerHTML += "<i class='fa-solid fa-user'></i>" + nameUser;
 } else {
-    btnIniciarSesion.style.display = "block";
-    btnRegistrarse.style.display = "block";
+    btnIniciarSesion.style.display = "inline-flex";
+    btnRegistrarse.style.display = "inline-flex";
     nombreUsuario.style.display = "none";
     SalirUsuario.style.display = "none"
 }
@@ -58,7 +58,7 @@ form1.addEventListener('submit', function (event) {
 
     if (emailValue) {
         console.log("Bienvenido");
-        modalRegistro.style.display = "block";
+        modalRegistro.style.display = "inline-flex";
         console.log(emailInput1)
         emailRegistroPlaceholder.placeholder = emailValue;
     } else {
@@ -93,7 +93,7 @@ formSes.addEventListener('submit', function (event) {
 
     if (emailValueSes) {
         localStorage.setItem("correo", emailValueSes);
-        modalSesNext1.style.display = "block";
+        modalSesNext1.style.display = "inline-flex";
         emailSesionPlaceholder.placeholder = emailInput2.value;
     } else {
         modalSesNext1.style.display = "none";
