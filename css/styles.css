@@ -28,6 +28,20 @@
 
 }
 
+#pago-exitoso {
+    margin-top: 4%;
+    /* padding: 1rem; */
+    /* background-color: #C9F7D5; */
+}
+.barra{
+    background-color: #34A853;
+}
+.pago-e-container {
+    padding: 0.5rem 1rem;
+    background-color: #C9F7D5;
+    display: flex;
+}
+
 /* html {
     overflow-x: hidden;
 }
@@ -122,7 +136,7 @@ section {
 }
 
 .btn-registrarse {
-    color: #13265E;
+    color: #030303;
     font-weight: 600;
     padding: 0px 12px;
     margin-left: 5px;

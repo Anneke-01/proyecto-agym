@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/modals.css">
+    <link rel="stylesheet" href="/css/carrito.css">
+    <link rel="stylesheet" href="/css/reponsivemodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="/images/nadsat.png" type="image/icon type">
+    <title>Nadsat Guide</title>
+    <script>
+        // Función para obtener la ubicación del usuario
+        function obtenerUbicacion() {
+          // Verificar si el navegador soporta la geolocalización
+          if (navigator.geolocation) {
+            // Solicitar la ubicación del usuario
+            navigator.geolocation.getCurrentPosition(function(position) {
+              var lat = position.coords.latitude;
+              var lng = position.coords.longitude;
+              
+              // Utilizar la ubicación del usuario
+              console.log('Latitud: ' + lat);
+              console.log('Longitud: ' + lng);
+              
+              // Aquí puedes agregar tu lógica para utilizar la ubicación del usuario, como mostrar un mapa con la ubicación o realizar acciones basadas en la ubicación.
+            }, function(error) {
+              // Manejar los errores de geolocalización
+              console.log('Error al obtener la ubicación del usuario:', error.message);
+            });
+          } else {
+            // El navegador no soporta la geolocalización
+            console.log('La geolocalización no está soportada por el navegador.');
+          }
+        }
+    
+        // Llamar a la función para solicitar la ubicación del usuario
+        obtenerUbicacion();
+      </script>
+</head>
+<body>
+    <section class="header">
+        <a href="/index.html">
+            <div class="logo">
+                <img src="/images/nadsat.png">
+                <div class="logo-text">
+                    <h4 style="display: table-caption;">Nadsat Guide</h4>
+                </div> 
+            </div>
+        </a> 
+        <div class="search-bar">
+            <form>
+                <div class="input-wrapper">
+                    <input type="text" required>
+                </div>
+                <div class="button-wrapper">
+                    <button type="submit"><i class="fas fa-magnifying-glass fa-xl" style="color: #ffffff;"></i></button>
+                </div>
+            </form>
+        </div>        
+        <nav class="navbar">  
+            <div class="dropdown">
+                <button onclick="toggleDropdown()" class="dropdown-button">
+                    Español
+                  <span id="arrow"><i id="arrow-icon" class="fas fa-chevron-down"></i></span>
+                </button>
+                <div id="dropdown-content" class="dropdown-content">
+                  <a href="#">Opción 1</a>
+                  <a href="#">Opción 2</a>
+                  <a href="#">Opción 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="toggleDropdown2()" class="dropdown-button">
+                    USD(U$)
+                  <span id="arrow"><i id="arrow-icon2" class="fas fa-chevron-down"></i></span>
+                </button>
+                <div id="dropdown-content2" class="dropdown-content">
+                  <a href="#">Opción 1</a>
+                  <a href="#">Opción 2</a>
+                  <a href="#">Opción 3</a>
+                </div>
+            </div>
+            <a href="#"><i class="fas fa-cart-shopping"></i></a>
+            <a href="#"><i class="fas fa-circle-question"></i></a>
+            <a href="#"><button class="btn-iniciarsesion" id="openModalSes">Iniciar sesión</button> </a>
+            <!-- <a href="#" class="btn-registrarse">Registrarse</a>   -->
+            <a href="#"><button class="btn-registrarse" id="openModal">Registrarse</button></a>
+            <a href="#"><button class="" id="nombre-usuario"></button></a>
+            <a href="#"><button class="" id="salir"><i class="fas fa fa-arrow-right-from-bracket"></i></button></a>
+           
+           
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+   
+
+
+    <section class="carrito-pt2">
+        <div class="carrito-pt-title">
+            <h1 style="color: #9FA3A9;">1. Datos personales</h1>
+            <h1 style="color: #142B6F;"> > 2. Pago</h1>
+        </div>
+        <div class="carrito-pt2-container">
+            <div class="datos-pago">
+                <h1 style="color: #142B6F;">Selecciona método de pago</h1>
+                <form action="" class="form-pago">
+                    <div class="tarjetas">
+                        <h4>Tarjeta de débito o crédito</h4>
+                        <div class="iconos">
+                            <iconify-icon icon="formkit:visa" width="30" height="30"></iconify-icon>
+                            <iconify-icon icon="logos:mastercard" width="30" height="30"></iconify-icon>
+                            <iconify-icon icon="logos:mastercard" width="30" height="30"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="input-numero-tarjeta" style=" margin-top: 1rem;">
+                        <label for="">Número de tarjeta</label>
+                        <div class="tarjeta-pago-info">
+                            <input type="text" name="" id="tarjeta-pago" placeholder="1234  5678  9012  3456">
+                            <iconify-icon icon="ion:card-outline" width="30" height="30"></iconify-icon>
+                        </div>
+                    </div>
+                    <div class="input-fecha-cvc" style=" margin-top: 1rem;">
+                        <div class="input-fecha">
+                            <label for="">Fecha de expiración</label>
+                            <input type="text" name="" id="fecha-tarjeta" placeholder="MM/AA" style=" margin-top: 1rem;">
+                        </div>
+                        <div class="input-cvc">
+                            <label for="" style=" margin-top: 1rem;">CVC/CVV</label>
+                            <input type="text" name="" id="cvc-tarjeta" placeholder="123" style=" margin-top: 1rem;">
+                        </div>
+                    </div>
+                    <div class="input-titular-tarjeta" style=" margin-top: 1rem;">
+                        <label for="">Titular de tarjeta</label>
+                        <div  class="tarjeta-pago-info">
+                            <input type="text" name="" id="titular-tarjeta" placeholder="Ej. Anneke Morales">
+                        </div>
+                    </div>
+                    
+     
+                </form>
+                <div class="otros-pagos">
+                    <div class="google-pay">
+                        <div class="radio-btn">
+                            <input type="radio" name="opcion" id="opcion1" value="opcion1">
+                            <h3 style="padding: 0.5rem 0 0 0.5rem;">Google Pay</h3>
+                        </div>
+                        <div class="icon-pago">
+                            <iconify-icon icon="flat-color-icons:google" width="25" height="25"></iconify-icon>
+                            <h4>Pay</h4>
+                        </div>
+                    </div>
+                    <div class="google-pay">
+                        <div class="radio-btn">
+                            <input type="radio" name="opcion" id="opcion1" value="opcion1">
+                            <h3 style="padding: 0.5rem 0 0 0.5rem;">Apple Pay</h3>
+                        </div>
+                        <div class="icon-pago">
+                            <iconify-icon icon="logos:apple" width="25" height="25"></iconify-icon>
+                            <h4>Pay</h4>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-positive" id="pagar-ahora">Pagar ahora</button>
+            </div>
+            
+            <div class="resumen-pedido">
+                <h1 style="color: #142B6F;">Resumen de tu pedido</h1>
+                <div class="resumen-pedido-container">
+                    <div class="resumen-title">
+                        <h4>Edimburgo: tour guiado a pie de Harry Potter</h4>
+                        <h4>$40</h4>
+                    </div>
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #eeff00;"></i>
+                        </div>
+                        <p style="margin-left: 1rem;">4.5/5</p>
+                        <p style="margin-left: 1rem;">11.601 opiniones</p>
+                    </div>
+                    <div class="fecha">
+                        <h5>7/7/2023</h5>
+                        <h5> |2 personas</h5>
+                    </div>
+                    <div>
+                        <p style="color: #2AB730;">Cancelación gratuita hasta 24 horas antes</p>
+                    </div>
+                    
+                </div>
+                <div class="precio">
+                    <div class="p-container">
+                        <h5>Precio total</h5>
+                        <h5>U$ 80</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Asistencia</h3>
+                <a href="">Contacto</a>
+                <a href="">Información legal</a>
+                <a href="">Política de privacidad</a>
+                <a href="">Cookies</a>
+                <a href="">Términos y condiciones</a>
+            </div>
+            <div class="box">
+                <h3>Empresa</h3>
+                <a href="">Sobre nosotros</a>
+                <a href="">Empleo</a>
+            </div>
+            <div class="box">
+                <h3>Trabaja con nosotros</h3>
+                <a href="">Afiliados</a>
+                <a href="">Agencias de viajes</a>
+                <a href="">Alojamiento</a>
+                <a href="">Proveedores</a>
+            </div>
+            <div class="box">
+                <h3>Métodos de pago</h3>
+                <i class="fa-brands fa-cc-visa fa-2xl" style="color: #ffffff;"></i>
+            </div>
+            
+        </div>
+
+        
+    </section>
+    <section class="sub-footer">
+        <div class="box-container">
+            <div class="box">
+                <div class="logo">
+                    <img style="width: 3rem;" src="/images/logo.png">
+                    <div class="logo-text">
+                        <h4 style="color:#ffffff;display: table-caption;
+                        font-weight: 800;
+                        margin-left: 0.5rem;">Nadsat Guide</h4>
+                    </div> 
+                </div>
+            </div>
+            <div class="box">
+                <h3 style="color:#ffffff;"><span>&copy; 2023 Nadsat Guide. Creado en Nicaragua.</span></h3>
+            </div>
+            <div class="box" style="padding-left: 28%;padding-top: 1rem;">
+                <a href=""><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest fa-xl" style="color: #ffffff;"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i></a>
+                
+                
+                
+                
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- footer section ends -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-title">
+                <span class="close">&times;</span>
+                <h2>Regístrate</h2>
+                <div id="linea-modal"></div>           
+            </div>
+            <form action="" class="form-register" id="form-register-p1">
+                <label for="">Email</label>
+                <div class="input-email">
+                    <input type="email" name="email" id="email-register" placeholder="Ejemplo: ana@gmail.com">
+                </div>
+                <button id="openModalReg" style="cursor:pointer;" type="submit">Continuar</button>
+                <div class="dividers">    
+                    <h5>O continuar con</h5>
+                </div>
+            </form> 
+            <div class="otro-registro">
+                <a href="https://accounts.google.com/"><iconify-icon icon="flat-color-icons:google" style="color: white;" width="30"></iconify-icon></a>
+                <a href="https://facebook.com/"><iconify-icon icon="logos:facebook"  width="30"></iconify-icon></a>
+                <a href="https://www.icloud.com/"><iconify-icon icon="ic:baseline-apple" style="color: rgb(247, 247, 247);" width="30"></iconify-icon></a>
+            </div>
+        </div>
+    </div>
+    <div id="modalRegistro" class="modalReg">
+        <div class="modal-contentReg">
+            <div class="modal-title">
+                <span class="closeReg">&times;</span>
+                <h2>Crear cuenta</h2>
+                <div id="linea-modal"></div>           
+            </div>
+            <form action="" class="form-register">
+                <div class="input-email">
+                    <input type="email" name="email" id="email-registro-placeholder" placeholder="" disabled>
+                    <a href="#"><h5>Modificar</h5></a>
+                </div>
+                <div class="input-name-apellido">
+                    <div class="input-name">
+                        <label for="">Nombre</label>
+                        <input type="text" name="name" id="name-register">
+                    </div>
+                    <div class="input-apellido">
+                        <label for="">Apellido</label>
+                        <input type="text" name="apellido" id="apellido-register">
+                    </div>
+                </div>
+                <div class="input-contrasena">
+                    <label for="">Contraseña</label>
+                    <input type="password" name="contrasena" id="contrasena-register">
+                </div>
+                <div>
+                    <input  type="checkbox" id="myCheckbox">
+                    <label for="myCheckbox">Quiero recibir descuentos y otras oferas por correo electrónico</label>
+                </div>
+                <button type="submit">Crear una cuenta</button>
+            </form>
+        </div>
+    </div>
+    <!-- Modal de sesión-->
+
+    <div id="modalSes" class="modal">
+        <div class="modal-content">
+            <div class="modal-title">
+                <span class="closeSes">&times;</span>
+                <h2>Inicia sesión</h2>
+                <div id="linea-modal"></div>           
+            </div>
+            <form action="" class="form-sesion">
+                <label for="">Email</label>
+                <div class="input-email">
+                    <input type="email" name="email" id="email-sesion">
+                </div>
+                <button id="openModalSesNext" type="submit" style="cursor:pointer;">Continuar</button>
+                <div class="dividers">
+                    <h5>O continuar con</h5>
+                </div>
+            </form>
+            <div class="otro-registro">
+                <a href=""><iconify-icon icon="flat-color-icons:google" style="color: white;" width="30"></iconify-icon></a>
+                <a href=""><iconify-icon icon="logos:facebook"  width="30"></iconify-icon></a>
+                <a href=""><iconify-icon icon="ic:baseline-apple" style="color: rgb(255, 255, 255);" width="30"></iconify-icon></a>
+            </div>
+        </div>
+    </div>
+    <div id="modalSesionNext" class="modalReg">
+        <div class="modal-contentReg">
+            <div class="modal-title">
+                <span class="closeSN">&times;</span>
+                <h2>¡Hola de nuevo!</h2>
+                <div id="linea-modal"></div>           
+            </div>
+            <form action="" class="form-sesion">
+                <div class="input-email">
+                    <input type="email" name="email" id="email-sesion-placeholder" placeholder="" disabled>
+                    <a href="#"><h5>Modificar</h5></a>
+                </div>
+    
+                <div class="input-contrasena">
+                    <label for="">Ingresa tu contraseña</label>
+                    <input type="password" name="contrasena" id="contrasena-sesion">
+                </div>
+                <div>
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+                </div>
+                <button type="submit">Crear una cuenta</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+    <script src="/js/validaciones.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/scrolls2.js"></script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0ViNNu0KRUoRp3_nmAXRe-pPgmbfgvDw&callback=initMap"></script>
+    <script type="text/javascript" src="/js/map.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        // Obtener referencia al botón
+        const pagarAhoraButton = document.getElementById("pagar-ahora");
+
+        // Agregar un event listener para el evento de clic
+        pagarAhoraButton.addEventListener("click", function() {
+            // Redirigir al usuario a "index.html"
+            window.location.href = "/index.html#pago-exitoso";
+        });
+    </script>
+
+</body>
+</html>
